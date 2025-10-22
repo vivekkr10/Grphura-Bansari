@@ -1,16 +1,15 @@
-// import react from 'react'
-
-import './App.css'
+import "./App.css";
+import Sidebar from "./components/salesExecutive/sidebar";
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
+    <div style={{ display: "flex" }}>
+      <Sidebar />
+      <div style={{ flex: 1, padding: "20px" }}>
+        <h1>Main Content Area</h1>
       </div>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,114 @@
+:root {
+  --sidebar-width: 280px;
+  --bg-color: #3158c9;
+  --text-color-primary: #ffffff;
+  --text-color-secondary: #ffffff;
+  --active-bg-color: #ebf5ff;
+  --active-text-color: #3d68e7;
+  --separator-color: #e0e0e0;
+}
+
+/* ------------------- MAIN CONTAINER ------------------- */
+#sidebar-container {
+  min-height: 100vh;
+  height: auto;
+  flex-shrink: 0;
+  background-color: var(--bg-color);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------------------- HEADER / LOGO ------------------- */
+#sidebar-header {
+  margin-bottom: 30px;
+  padding: 30px;
+}
+
+#logo-img {
+  max-width: 100%;
+  height: 45px;
+}
+
+/* ------------------- PROFILE SECTION ------------------- */
+#profile-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 25px 25px;
+}
+
+#profile-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#profile-details #profile-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-color-primary);
+  margin: 0;
+}
+
+#profile-details #profile-title {
+  font-size: 0.9rem;
+  color: var(--text-color-secondary);
+  margin: 0;
+}
+
+/* ------------------- NAVIGATION MENU ------------------- */
+#nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nav-item:hover {
+  background-color: hwb(0 100% 0% / 22%);
+  border-left: 2.8px solid #ffffff;
+}
+
+#nav-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color-primary);
+  flex-grow: 1;
+}
+
+.nav-item.active {
+  background-color: var(--active-bg-color);
+}
+
+.nav-item.active a {
+  color: var(--active-text-color);
+  font-weight: 700;
+}
