@@ -1,53 +1,77 @@
-import React from "react";
-import logo from "../../assets/salesExecutive/logo.png";
-import profile from "../../assets/salesExecutive/profile.png";
-import dashboard from "../../assets/salesExecutive/dashboard.png";
-import prospect from "../../assets/salesExecutive/prospect.png";
-import report from "../../assets/salesExecutive/report.png";
-import salesReport from "../../assets/salesExecutive/salesReport.png";
-import userData from "../../assets/salesExecutive/userData.png";
+import React, { useState } from "react";
+import logo from "../../assets/salesExecutive/sidebar/logo.png";
+import profile from "../../assets/salesExecutive/sidebar/profile.png";
+import dashboard from "../../assets/salesExecutive/sidebar/dashboard.png";
+import prospect from "../../assets/salesExecutive/sidebar/prospect.png";
+import report from "../../assets/salesExecutive/sidebar/report.png";
+import salesReport from "../../assets/salesExecutive/sidebar/salesReport.png";
+import userData from "../../assets/salesExecutive/sidebar/userData.png";
 import "../salesExecutive/sidebar.css";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleSidebar = () => setIsOpen(!isOpen);
+
   return (
-    <div id="sidebar-container">
-      <div id="sidebar-header">
-        <img src={logo} alt="Graphura Logo" id="logo-img" />
-      </div>
+    <>
+      {/* === Hamburger Menu (Visible on small screens only) === */}
 
-      <div id="profile-section">
-        <img src={profile} alt="Profile Icon" id="profile-img" />
-        <div id="profile-details">
-          <h1 id="profile-name">Name</h1>
-          <p id="profile-title">Sales Executive</p>
+      {/* === Sidebar === */}
+      <aside className={`sidebar ${isOpen ? "open" : ""}`}>
+        <div id="sidebar-container">
+      <div id="menu-toggle" className={isOpen ? "open" : ""} onClick={toggleSidebar}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+          <div id="sidebar-header">
+            <img src={logo} alt="Graphura Logo" id="logo-img" />
+          </div>
+
+          <div id="profile-section">
+            <img src={profile} alt="Profile Icon" id="profile-img" />
+            <div id="profile-details">
+              <h1 id="profile-name">Name</h1>
+              <p id="profile-title">Sales Executive</p>
+            </div>
+          </div>
+
+          <ul id="nav-menu">
+            <li className="nav-item">
+              <img src={dashboard} alt="Dashboard Icon" id="nav-icon" />
+              <NavLink to="/dashboard">Dashboard</NavLink>
+              <hr className="nav-separator" />
+            </li>
+
+            <li className="nav-item">
+              <img src={userData} alt="User Data Icon" id="nav-icon" />
+              <NavLink to="/user-data">User Data</NavLink>
+              <hr className="nav-separator" />
+            </li>
+
+            <li className="nav-item">
+              <img src={prospect} alt="Prospect Icon" id="nav-icon" />
+              <NavLink to="/prospect">Prospect</NavLink>
+              <hr className="nav-separator" />
+            </li>
+
+            <li className="nav-item">
+              <img src={report} alt="Report Icon" id="nav-icon" />
+              <NavLink to="/report">Report</NavLink>
+              <hr className="nav-separator" />
+            </li>
+
+            <li className="nav-item">
+              <img src={salesReport} alt="Sales Report Icon" id="nav-icon" />
+              <NavLink to="/sales-report">Sales Report</NavLink>
+              <hr className="nav-separator" />
+            </li>
+          </ul>
         </div>
-      </div>
-
-      {/* Navigation Links */}
-      <ul id="nav-menu">
-        <li className="nav-item">
-          <img src={dashboard} alt="Dashboard Icon" id="nav-icon" />
-          <a href="#dashboard">Dashboard</a>
-        </li>
-
-        <li className="nav-item">
-          <img src={userData} alt="User Data Icon" id="nav-icon" />
-          <a href="#userData">User Data</a>
-        </li>
-        <li className="nav-item">
-          <img src={prospect} alt="Prospect Icon" id="nav-icon" />
-          <a href="#prospect">Prospect</a>
-        </li>
-        <li className="nav-item">
-          <img src={report} alt="Report Icon" id="nav-icon" />
-          <a href="#report">Report</a>
-        </li>
-        <li className="nav-item">
-          <img src={salesReport} alt="Sales Report Icon" id="nav-icon" />
-          <a href="#salesReport">Sales Report</a>
-        </li>
-      </ul> 
-    </div>
+      </aside>
+    </>
   );
 };
 
