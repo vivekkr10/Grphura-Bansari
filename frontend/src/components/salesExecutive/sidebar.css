@@ -124,7 +124,7 @@
 
 /* ------------------- HAMBURGER MENU ------------------- */
 #menu-toggle {
-  display: flex; /* ensure visible on mobile */
+  display: none; /* ensure visible on mobile */
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
