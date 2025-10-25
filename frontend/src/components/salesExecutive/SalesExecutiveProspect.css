@@ -1,0 +1,70 @@
+h1 {
+  font-size: 32px;
+  margin-bottom: 24px;
+  color: #444;
+  
+}
+
+.prospect-form {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 0;
+}
+
+.form-row label {
+  flex: 0 0 180px;
+  font-size: 18px;
+  color: #222;
+}
+
+.form-row input,
+.form-row textarea {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1.5px solid #e0e7ef;
+  border-radius: 7px;
+  background: #fafbfc;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  border: 1.5px solid #2d4fd7;
+  background: #fff;
+}
+
+.form-row textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-row:last-child {
+  margin-top: 12px;
+  justify-content: flex-end;
+}
+
+.update-btn {
+  background: #2d4fd7;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 32px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.update-btn:hover {
+  background: #1e357a;
+}
