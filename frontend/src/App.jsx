@@ -1,28 +1,59 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Sidebar from "./components/salesExecutive/sidebar";
-import Dashboard from "./pages/salesExecutive/Dashboard";
-import Header from "./components/salesExecutive/Header";
-import Prospect from "./pages/salesExecutive/Prospect";
-import SalesReport from "./pages/salesExecutive/SalesReport";
+import { roleBasedRoutes } from "./routes";
+
+// Import all role-based headers and sidebars
+import SalesExecutiveHeader from "./components/salesExecutive/Header";
+import SalesExecutiveSidebar from "./components/salesExecutive/Sidebar";
+
+import SalesTeamLeadHeader from "./components/salesTeamLead/Header";
+import SalesTeamLeadSidebar from "./components/salesTeamLead/Sidebar";
 
 function App() {
-  return (
-    <Router>
-      <div>
-        <Sidebar />
-        <div>
-          <Header />
-          <Routes>
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/prospect" element={<Prospect />} />
-            <Route path="/sales-report" element={<SalesReport />} />
-          </Routes>
-        </div>
-      </div>
-    </Router>
-  );
+  const role = localStorage.getItem("role") || "salesTeamLead"; // Example fallback
+  const currentRoutes = roleBasedRoutes[role] || [];
+
+  // Choose header and sidebar dynamically
+  const renderLayout = () => {
+    switch (role) {
+      case "salesExecutive":
+        return (
+          <>
+            <SalesExecutiveSidebar />
+            <div>
+              <SalesExecutiveHeader />
+              <Routes>
+                {currentRoutes.map((route, index) => (
+                  <Route key={index} path={route.path} element={route.element} />
+                ))}
+              </Routes>
+            </div>
+          </>
+        );
+
+      case "salesTeamLead":
+        return (
+          <>
+            <SalesTeamLeadSidebar />
+            <div>
+              <SalesTeamLeadHeader />
+              <Routes>
+                {currentRoutes.map((route, index) => (
+                  <Route key={index} path={route.path} element={route.element} />
+                ))}
+              </Routes>
+            </div>
+          </>
+        );
+
+      // 🧩 Add other 9 roles below in the same pattern
+      default:
+        return <div>Role not found</div>;
+    }
+  };
+
+  return <Router>{renderLayout()}</Router>;
 }
 
 export default App;
