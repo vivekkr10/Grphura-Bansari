@@ -1,17 +1,15 @@
-import "../../style/SalesTeamLead/SalesTeamLeadProspectForm.css";
+import "../../style/SalesTeamLead/ProspectForm.css";
 
-function SalesTeamLeadProspectForm() {
+function ProspectForm() {
   // const handleSubmit = () => {}; TODO  form submission handling
 
   return (
     <>
-      {/* <h1>Prospect Page Under Construction</h1> */}
       <main>
         <div id="prospect-container">
           <div id="card">
-              <h1>Prospect</h1>
+            <h1>Prospect</h1>
             <form id="prospect-form">
-{/* <div id="form-box"></div> */}
               <div id="form-row">
                 <label htmlFor="form-row">Company Name</label>
                 <input type="text" id="company" name="company" />
@@ -58,4 +56,4 @@ function SalesTeamLeadProspectForm() {
   );
 }
 
-export default SalesTeamLeadProspectForm
+export default ProspectForm;

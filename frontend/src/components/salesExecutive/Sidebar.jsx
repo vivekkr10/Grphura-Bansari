@@ -26,11 +26,11 @@ const Sidebar = () => {
         <span></span>
         <span></span>
       </div>
-          <div id="sidebar-header">
+          <div id="sidebar-header" style={{backgroundColor:"#3158c9"}}>
             <img src={logo} alt="Graphura Logo" id="logo-img" />
           </div>
 
-          <div id="profile-section">
+          <div id="profile-section" style={{backgroundColor:"#3d68e7"}}>
             <img src={profile} alt="Profile Icon" id="profile-img" />
             <div id="profile-details">
               <h1 id="profile-name">Name</h1>
@@ -38,7 +38,7 @@ const Sidebar = () => {
             </div>
           </div>
 
-          <ul id="nav-menu">
+          <ul id="nav-menu" style={{backgroundColor:"#3d68e7"}}>
             <li className="nav-item">
               <img src={dashboard} alt="Dashboard Icon" id="nav-icon" />
               <NavLink to="/dashboard">Dashboard</NavLink>

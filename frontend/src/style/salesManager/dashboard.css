@@ -27,6 +27,7 @@ body {
 
 /* === DATA WRAP (HOLDING BOXES) === */
 #data-wrap {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -152,9 +153,24 @@ body {
   flex-direction: column;
 }
 
-/* #hot-clients {
-    padding: 40px;
-} */
+#hot-clients {
+  width: 100%;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+#hot-clients #container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#clients{
+  border-radius: 5px;
+}
+#client-list{
+  border-radius: 5px;
+}
 
 #clients {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);

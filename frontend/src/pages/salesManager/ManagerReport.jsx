@@ -55,7 +55,7 @@ const Dashboard = () => {
           <section id="hot-clients">
             <div id="container">
               <div id="clients">
-                <h1>Hot Clients</h1>
+                <h1>Call Logs</h1>
                 <div id="client-list">
                   <table>
                     <thead>

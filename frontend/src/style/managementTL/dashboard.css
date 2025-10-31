@@ -28,7 +28,7 @@ body {
 /* === DATA WRAP (HOLDING BOXES) === */
 #data-wrap {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
   /* width: 100%; */
@@ -152,24 +152,9 @@ body {
   flex-direction: column;
 }
 
-#hot-clients {
-  width: 100%;
-  padding: 20px 30px;
-  box-sizing: border-box;
-}
-
-#hot-clients #container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-#clients{
-  border-radius: 5px;
-}
-#client-list{
-  border-radius: 5px;
-}
+/* #hot-clients {
+    padding: 40px;
+} */
 
 #clients {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -240,8 +225,8 @@ td button {
 /* === POPUP BOX === */
 #popup-box {
   background-color: #ffffff;
-  width: 827px;
-  height: 472px;
+  width: 937px;
+  height: 530px;
   max-width: 90%;
   border-radius: 15px;
   padding: 25px 30px;
@@ -269,13 +254,13 @@ td button {
 #close-btn {
   position: absolute;
   right: 30px;
-  background-color: #4972e8;
+  background-color: #3660de;
   border: none;
   color: white;
   border-radius: 6px;
   padding: 6px 16px;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   transition: 0.2s;
 }
@@ -326,74 +311,22 @@ td button {
   }
 }
 
-/* Radio buttons */
-.radio-group {
-  display: flex;
-  justify-content: center;
-  gap: 35px;
-  margin-bottom: 25px;
+/* === HOT CLIENTS / TABLE SECTION === */
+#hot-clients {
+  width: 100%;
+  padding: 20px 30px;
+  box-sizing: border-box;
 }
 
-.radio-group input[type="radio"] {
-  width: 18px;
-  height: 18px;
-  accent-color: #3660de; /* makes it blue like your theme */
-  transform: scale(1.4); /* increase size */
-  cursor: pointer;
-  margin-right: 8px;
-  background-color: #D9D9D9;
-}
-
-
-.radio-group label {
-  font-size: 24px;
-  font-weight: 500;
-  color: #000000;
-}
-
-/* Comment section */
-.comment-section {
+#hot-clients #container {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  width: 100%;
-  margin-bottom: 25px;
-  height: 183px;
-  border: none;
-  border-radius: 4px;
-  padding: 12px;
-  font-size: 15px;
-  resize: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: #fbfbfb;
+  gap: 20px;
 }
 
-.comment-section label {
-  font-size: 17px;
-  font-weight: 500;
-  color: #333;
+#clients{
+  border-radius: 5px;
 }
-
-.comment-section textarea {
-  border: none;
-  resize: none;
-  background-color: #fbfbfb;
-}
-
-#update-btn {
-  display: block;
-  margin: 0 auto;
-  background-color: #4972e8;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  padding: 6px 33px;
-  font-size: 13px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.25s;
-}
-
-#update-btn:hover {
-  background-color: #274dc9;
+#client-list{
+  border-radius: 5px;
 }

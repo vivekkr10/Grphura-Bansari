@@ -13,8 +13,11 @@ import SalesTeamLeadSidebar from "./components/salesTeamLead/Sidebar";
 import SalesManagerSidebar from "./components/salesManager/Sidebar"
 import SalesManagerHeader from "./components/salesManager/Header"
 
+import ManagementTLSidebar from "./components/managementTL/sidebar"
+import ManagementTLHeader from "./components/managementTL/header"
+
 function App() {
-  const role = localStorage.getItem("role") || "salesManager"; // Example fallback
+  const role = localStorage.getItem("role") || "managementTL"; // Example fallback
   const currentRoutes = roleBasedRoutes[role] || [];
 
   // Choose header and sidebar dynamically
@@ -55,6 +58,21 @@ function App() {
             <SalesManagerSidebar />
             <div>
               <SalesManagerHeader />
+              <Routes>
+                {currentRoutes.map((route, index) => (
+                  <Route key={index} path={route.path} element={route.element} />
+                ))}
+              </Routes>
+            </div>
+          </>
+        );
+      
+      case "managementTL":
+        return (
+          <>
+            <ManagementTLSidebar />
+            <div>
+              <ManagementTLHeader />
               <Routes>
                 {currentRoutes.map((route, index) => (
                   <Route key={index} path={route.path} element={route.element} />

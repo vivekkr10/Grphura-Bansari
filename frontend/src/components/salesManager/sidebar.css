@@ -15,7 +15,6 @@
   left: 0;
   width: var(--sidebar-width);
   height: 100vh;
-  background-color: var(--active-text-color);
   display: flex;
   flex-direction: column;
   z-index: 50;

@@ -7,11 +7,15 @@ import SE_SalesReport from "../pages/salesExecutive/SalesReport";
 import TL_Dashboard from "../pages/salesTeamLead/Dashboard";
 import TL_TransferData from "../pages/salesTeamLead/TransferData";
 import TL_UntouchedData from "../pages/salesTeamLead/UntouchedData";
+import TL_TeamMember from "../pages/salesTeamLead/TeamMember";
+import TL_ProspectForm from "../pages/salesTeamLead/ProspectForm";
 // import TL_TeamReport from "../pages/salesTeamLead/TeamReport";
 // import TL_Prospect from "../pages/salesTeamLead/Prospect";
 
 import SM_Dashboard from "../pages/salesManager/Dashboard"
 import SM_ManagerReport from "../pages/salesManager/managerReport";
+
+import M_Dashboard from "../pages/managementTL/Dashboard";
 
 export const roleBasedRoutes = {
   salesExecutive: [
@@ -26,12 +30,18 @@ export const roleBasedRoutes = {
   { path: "/dashboard", element: <TL_Dashboard /> },
   { path: "/transfer-data", element: <TL_TransferData /> },
   { path: "/untouched-data", element: <TL_UntouchedData /> },
+  { path: "/team-member", element: <TL_TeamMember /> },
+  { path: "/prospect-form", element: <TL_ProspectForm /> },
   // { path: "/team-report", element: <TL_TeamReport /> },
   ],
 
   salesManager: [
   { path: "/dashboard", element: <SM_Dashboard /> },
   { path: "/manager-report", element: <SM_ManagerReport /> },
+  ],
+  
+  managementTL: [
+  { path: "/dashboard", element: <M_Dashboard /> },
   ],
   
 };
