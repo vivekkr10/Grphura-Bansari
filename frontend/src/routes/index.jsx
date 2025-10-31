@@ -10,6 +10,9 @@ import TL_UntouchedData from "../pages/salesTeamLead/UntouchedData";
 // import TL_TeamReport from "../pages/salesTeamLead/TeamReport";
 // import TL_Prospect from "../pages/salesTeamLead/Prospect";
 
+import SM_Dashboard from "../pages/salesManager/Dashboard"
+import SM_ManagerReport from "../pages/salesManager/managerReport";
+
 export const roleBasedRoutes = {
   salesExecutive: [
     { path: "/dashboard", element: <SE_Dashboard /> },
@@ -26,5 +29,9 @@ export const roleBasedRoutes = {
   // { path: "/team-report", element: <TL_TeamReport /> },
   ],
 
-  // ... add remaining 9 roles here in the same way
+  salesManager: [
+  { path: "/dashboard", element: <SM_Dashboard /> },
+  { path: "/manager-report", element: <SM_ManagerReport /> },
+  ],
+  
 };
