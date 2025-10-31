@@ -16,6 +16,9 @@ import SM_Dashboard from "../pages/salesManager/Dashboard"
 import SM_ManagerReport from "../pages/salesManager/managerReport";
 
 import M_Dashboard from "../pages/managementTL/Dashboard";
+import M_TeamMember from "../pages/managementTL/TeamMember";
+import M_Review from "../pages/managementTL/Review";
+import M_Report from "../pages/managementTL/Report";
 
 export const roleBasedRoutes = {
   salesExecutive: [
@@ -42,6 +45,9 @@ export const roleBasedRoutes = {
   
   managementTL: [
   { path: "/dashboard", element: <M_Dashboard /> },
+  { path: "/team-member", element: <M_TeamMember /> },
+  { path: "/review", element: <M_Review /> },
+  { path: "/report", element: <M_Report /> },
   ],
   
 };
