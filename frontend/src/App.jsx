@@ -10,14 +10,17 @@ import SalesExecutiveSidebar from "./components/salesExecutive/Sidebar";
 import SalesTeamLeadHeader from "./components/salesTeamLead/Header";
 import SalesTeamLeadSidebar from "./components/salesTeamLead/Sidebar";
 
-import SalesManagerSidebar from "./components/salesManager/Sidebar"
-import SalesManagerHeader from "./components/salesManager/Header"
+import SalesManagerSidebar from "./components/salesManager/Sidebar";
+import SalesManagerHeader from "./components/salesManager/Header";
 
-import ManagementTLSidebar from "./components/managementTL/sidebar"
-import ManagementTLHeader from "./components/managementTL/header"
+import ManagementTLSidebar from "./components/managementTL/sidebar";
+import ManagementTLHeader from "./components/managementTL/header";
+
+import ManagerManagementSidebar from "./components/managerManagement/Sidebar";
+import ManagerManagementHeader from "./components/managerManagement/Header";
 
 function App() {
-  const role = localStorage.getItem("role") || "salesExecutive"; // Example fallback
+  const role = localStorage.getItem("role") || "managerManagement"; // Example fallback
   const currentRoutes = roleBasedRoutes[role] || [];
 
   // Choose header and sidebar dynamically
@@ -31,7 +34,11 @@ function App() {
               <SalesExecutiveHeader />
               <Routes>
                 {currentRoutes.map((route, index) => (
-                  <Route key={index} path={route.path} element={route.element} />
+                  <Route
+                    key={index}
+                    path={route.path}
+                    element={route.element}
+                  />
                 ))}
               </Routes>
             </div>
@@ -46,7 +53,11 @@ function App() {
               <SalesTeamLeadHeader />
               <Routes>
                 {currentRoutes.map((route, index) => (
-                  <Route key={index} path={route.path} element={route.element} />
+                  <Route
+                    key={index}
+                    path={route.path}
+                    element={route.element}
+                  />
                 ))}
               </Routes>
             </div>
@@ -60,13 +71,17 @@ function App() {
               <SalesManagerHeader />
               <Routes>
                 {currentRoutes.map((route, index) => (
-                  <Route key={index} path={route.path} element={route.element} />
+                  <Route
+                    key={index}
+                    path={route.path}
+                    element={route.element}
+                  />
                 ))}
               </Routes>
             </div>
           </>
         );
-      
+
       case "managementTL":
         return (
           <>
@@ -75,7 +90,30 @@ function App() {
               <ManagementTLHeader />
               <Routes>
                 {currentRoutes.map((route, index) => (
-                  <Route key={index} path={route.path} element={route.element} />
+                  <Route
+                    key={index}
+                    path={route.path}
+                    element={route.element}
+                  />
+                ))}
+              </Routes>
+            </div>
+          </>
+        );
+
+      case "managerManagement":
+        return (
+          <>
+            <ManagerManagementSidebar />
+            <div>
+              <ManagerManagementHeader />
+              <Routes>
+                {currentRoutes.map((route, index) => (
+                  <Route
+                    key={index}
+                    path={route.path}
+                    element={route.element}
+                  />
                 ))}
               </Routes>
             </div>

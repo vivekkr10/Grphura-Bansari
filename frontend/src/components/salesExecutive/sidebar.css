@@ -1,5 +1,5 @@
 :root {
-  --sidebar-width: 280px;
+  --sidebar-width: 310px;
   --bg-color: #3158c9;
   --text-color-primary: #ffffff;
   --text-color-secondary: #ffffff;
@@ -123,7 +123,7 @@
 
 /* ------------------- HAMBURGER MENU ------------------- */
 #menu-toggle {
-  display: none; /* ensure visible on mobile */
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;

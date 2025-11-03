@@ -1,20 +1,55 @@
-:root {
-  --sidebar-width: 280px;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+.main{
+    padding: 1.5rem;
+    margin-left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
 }
 
-/* Main container */
-#userData-container {
-  padding: 1.5rem;
-  margin-left: var(--sidebar-width);
-  width: calc(100% - var(--sidebar-width));
-  background-color: #fff;
-  transition: margin-left 0.3s ease, width 0.3s ease;
+.main h1{
+  color: #5A5C69;
+  font-size: 36px ;
+}
+.table-content{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin: 20px 0px 0px 0px;
+    padding: 30px 10px 0 10px;
 }
 
-/* Mobile view */
-@media (max-width: 1024px) {
-  #userData-container {
-    margin-left: 0;
-    width: 100%;
-  }
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+th,
+td {
+  padding: 10px 19px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  font-size: 13px;
+}
+
+th {
+  color: #000000;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+tr:hover {
+  background-color: #f9fafc;
+}
+
+td button {
+  width: 68px;
+  height: 21px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3660de;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
 }

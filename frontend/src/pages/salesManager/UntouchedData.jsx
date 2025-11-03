@@ -213,7 +213,7 @@ const UntouchedData = () => {
                 <div
                   style={{
                     display: "flex",
-                    alignItems: "center",
+                    alignItems: "flex-start",
                     justifyContent: "space-between",
                     marginTop: "8px",
                   }}
@@ -230,16 +230,16 @@ const UntouchedData = () => {
                   </p>
                   <div
                     style={{
-                      background: "#f3f6fa",
+                      background: "#fff",
                       borderRadius: "8px",
                       padding: "8px",
-                      boxShadow: "inset 0 0 0 1px #eef2f7",
+                      
                     }}
                   >
                     <img
                       src={card.icon}
                       alt={card.title}
-                      style={{ width: "28px", height: "28px" }}
+                      style={{ width: "55px", height: "53px",backgroundColor:"#fff" }}
                     />
                   </div>
                 </div>
