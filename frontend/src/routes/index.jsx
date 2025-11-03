@@ -3,6 +3,7 @@ import SE_Dashboard from "../pages/salesExecutive/Dashboard";
 import SE_Prospect from "../pages/salesExecutive/Prospect";
 import SE_Report from "../pages/salesExecutive/Report";
 import SE_SalesReport from "../pages/salesExecutive/SalesReport";
+import SE_UserData from "../pages/salesExecutive/UserData";
 
 import TL_Dashboard from "../pages/salesTeamLead/Dashboard";
 import TL_TransferData from "../pages/salesTeamLead/TransferData";
@@ -29,6 +30,7 @@ export const roleBasedRoutes = {
     { path: "/prospect", element: <SE_Prospect /> },
     { path: "/sales-report", element: <SE_SalesReport /> },
     { path: "/report", element: <SE_Report /> },
+    { path: "/user-data", element: <SE_UserData /> },
     { path: "*", element: <h2>Page Not Found</h2> },
   ],
 
