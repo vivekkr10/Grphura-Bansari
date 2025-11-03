@@ -17,6 +17,7 @@ const Salary = () => {
       email: "Bold text column",
       contact: "Bold text column",
       duration: "Bold text column",
+      Amount: "4000/- ",
       
     },
     {
@@ -25,6 +26,7 @@ const Salary = () => {
       email: "Bold text column",
       contact: "Bold text column",
       duration: "Bold text column",
+      Amount: "4000/- ",
       
     },
     {
@@ -33,6 +35,7 @@ const Salary = () => {
       email: "Bold text column",
       contact: "Bold text column",
       duration: "Bold text column",
+      Amount: "4000/- ",
       
     },
     {
@@ -41,6 +44,7 @@ const Salary = () => {
       email: "Bold text column",
       contact: "Bold text column",
       duration: "Bold text column",
+      Amount: "4000/- ",
       
     },
     {
@@ -49,6 +53,7 @@ const Salary = () => {
       email: "Bold text column",
       contact: "Bold text column",
       duration: "Bold text column",
+      Amount: "4000/- ",
      
     },
   ];
