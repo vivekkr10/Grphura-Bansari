@@ -40,7 +40,7 @@ const Sidebar = () => {
             <img src={profile} alt="Profile Icon" id="profile-img" />
             <div id="profile-details">
               <h1 id="profile-name">Name</h1>
-              <p id="profile-title">Sales Manager</p>
+              <p id="profile-title">TL / Management</p>
             </div>
           </div>
 

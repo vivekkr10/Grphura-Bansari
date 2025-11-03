@@ -14,6 +14,8 @@ import TL_ProspectForm from "../pages/salesTeamLead/ProspectForm";
 
 import SM_Dashboard from "../pages/salesManager/Dashboard"
 import SM_ManagerReport from "../pages/salesManager/managerReport";
+import TotalSales from "../pages/salesManager/TotalSales";
+import Salary from "../pages/salesManager/Salary";
 
 import M_Dashboard from "../pages/managementTL/Dashboard";
 import M_TeamMember from "../pages/managementTL/TeamMember";
@@ -41,6 +43,8 @@ export const roleBasedRoutes = {
   salesManager: [
   { path: "/dashboard", element: <SM_Dashboard /> },
   { path: "/manager-report", element: <SM_ManagerReport /> },
+  { path: "/total-sales", element: <TotalSales /> },
+  { path: "/salary", element: <Salary /> },
   ],
   
   managementTL: [
