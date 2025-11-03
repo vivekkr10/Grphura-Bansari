@@ -1,13 +1,17 @@
 import React, { useState } from "react";
-import logo from "../../assets/managementEmployee/sidebar/logo.png";
-import profile from "../../assets/managementEmployee/sidebar/profile.png";
-import dashboard from "../../assets/managementEmployee/sidebar/dashboard.png";
-import completedProjects from "../../assets/managementEmployee/sidebar/completedProjects.png";
-import payout from "../../assets/managementEmployee/sidebar/payout.png";
-import help from "../../assets/managementEmployee/sidebar/help.png";
-import myProjects from "../../assets/managementEmployee/sidebar/myProjects.png";
-
-import "../salesManager/sidebar.css";
+import logo from "../../assets/managerManagement/sidebar/logo.png";
+import profile from "../../assets/managerManagement/sidebar/profile.png";
+import dashboard from "../../assets/managerManagement/sidebar/dashboard.png";
+import managerReport from "../../assets/managerManagement/sidebar/managerReport.png";
+import recivedData from "../../assets/managerManagement/sidebar/recivedData.png";
+import review from "../../assets/managerManagement/sidebar/review.png";
+import teamMamber from "../../assets/managerManagement/sidebar/teamMember.png";
+import totalProjects from "../../assets/managerManagement/sidebar/totalProjects.png";
+import teamReport from "../../assets/managerManagement/sidebar/teamReport.png";
+import transferDataFdBK from "../../assets/managerManagement/sidebar/transferDataFdBK.png";
+import workingProjects from "../../assets/managerManagement/sidebar/workingProjects.png";
+import salary from "../../assets/managerManagement/sidebar/salary.png";
+import "../managerManagement/sidebar.css";
 import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
@@ -35,7 +39,7 @@ const Sidebar = () => {
             <img src={profile} alt="Profile Icon" id="profile-img" />
             <div id="profile-details">
               <h1 id="profile-name">Name</h1>
-              <p id="profile-title">Employee</p>
+              <p id="profile-title">Manager / Management</p>
             </div>
           </div>
 
@@ -45,24 +49,58 @@ const Sidebar = () => {
               <NavLink to="/dashboard">Dashboard</NavLink>
               <hr className="nav-separator" />
             </li>
+
             <li className="nav-item">
-              <img src={myProjects} alt="Sales Report Icon" id="nav-icon" />
-              <NavLink to="/my-projects">My Projects</NavLink>
+              <img src={totalProjects} alt="User Data Icon" id="nav-icon" />
+              <NavLink to="/total-projects">Total Projects</NavLink>
               <hr className="nav-separator" />
             </li>
+
             <li className="nav-item">
-              <img src={completedProjects} alt="Sales Report Icon" id="nav-icon" />
-              <NavLink to="/completed-projects">Completed Projects</NavLink>
+              <img src={workingProjects} alt="Prospect Icon" id="nav-icon" />
+              <NavLink to="/working-projects">Working Projects</NavLink>
               <hr className="nav-separator" />
             </li>
+
             <li className="nav-item">
-              <img src={payout} alt="Sales Report Icon" id="nav-icon" />
-              <NavLink to="/payout">payout</NavLink>
+              <img src={teamMamber} alt="Report Icon" id="nav-icon" />
+              <NavLink to="/team-members">Team Member</NavLink>
               <hr className="nav-separator" />
             </li>
+
             <li className="nav-item">
-              <img src={help} alt="Sales Report Icon" id="nav-icon" />
-              <NavLink to="/Help">Help</NavLink>
+              <img src={managerReport} alt="Sales Report Icon" id="nav-icon" />
+              <NavLink to="/manager-report">Manager Report</NavLink>
+              <hr className="nav-separator" />
+            </li>
+
+            <li className="nav-item">
+              <img src={teamReport} alt="Sales Report Icon" id="nav-icon" />
+              <NavLink to="/transfer-data">Team Report</NavLink>
+              <hr className="nav-separator" />
+            </li>
+
+            <li className="nav-item">
+              <img src={recivedData} alt="Sales Report Icon" id="nav-icon" />
+              <NavLink to="/recived-data">Recived Data</NavLink>
+              <hr className="nav-separator" />
+            </li>
+
+            <li className="nav-item">
+              <img src={transferDataFdBK} alt="Sales Report Icon" id="nav-icon" />
+              <NavLink to="/transfer-data-to-fdbk">Transfer Data to FDBK.</NavLink>
+              <hr className="nav-separator" />
+            </li>
+
+            <li className="nav-item">
+              <img src={review} alt="Sales Report Icon" id="nav-icon" />
+              <NavLink to="/Review">Review</NavLink>
+              <hr className="nav-separator" />
+            </li>
+            
+            <li className="nav-item">
+              <img src={salary} alt="Sales Report Icon" id="nav-icon" />
+              <NavLink to="/salary">Salary</NavLink>
               <hr className="nav-separator" />
             </li>
           </ul>

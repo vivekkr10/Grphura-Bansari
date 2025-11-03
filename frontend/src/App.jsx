@@ -16,11 +16,17 @@ import SalesManagerHeader from "./components/salesManager/Header";
 import ManagementTLSidebar from "./components/managementTL/sidebar";
 import ManagementTLHeader from "./components/managementTL/header";
 
+import ManagementEmployeeSideber from "./components/managementEmployee/Sidebar";
+import ManagementEmployeeHeader from "./components/managementEmployee/Header";
+
 import ManagerManagementSidebar from "./components/managerManagement/Sidebar";
 import ManagerManagementHeader from "./components/managerManagement/Header";
 
+import FeedbackManagerSidebar from "./components/feedbackmanager/Sidebar";
+import FeedbackManagerHeader from "./components/feedbackmanager/Header";
+
 function App() {
-  const role = localStorage.getItem("role") || "managerManagement"; // Example fallback
+  const role = localStorage.getItem("role") || "feedbackManager"; // Example fallback
   const currentRoutes = roleBasedRoutes[role] || [];
 
   // Choose header and sidebar dynamically
@@ -101,12 +107,50 @@ function App() {
           </>
         );
 
+      case "managementEmployee":
+        return (
+          <>
+            <ManagementEmployeeSideber />
+            <div>
+              <ManagementEmployeeHeader />
+              <Routes>
+                {currentRoutes.map((route, index) => (
+                  <Route
+                    key={index}
+                    path={route.path}
+                    element={route.element}
+                  />
+                ))}
+              </Routes>
+            </div>
+          </>
+        );
+
       case "managerManagement":
         return (
           <>
             <ManagerManagementSidebar />
             <div>
               <ManagerManagementHeader />
+              <Routes>
+                {currentRoutes.map((route, index) => (
+                  <Route
+                    key={index}
+                    path={route.path}
+                    element={route.element}
+                  />
+                ))}
+              </Routes>
+            </div>
+          </>
+        );
+
+      case "feedbackManager":
+        return (
+          <>
+            <FeedbackManagerSidebar />
+            <div>
+              <FeedbackManagerHeader />
               <Routes>
                 {currentRoutes.map((route, index) => (
                   <Route
