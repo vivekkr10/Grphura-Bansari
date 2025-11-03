@@ -7,63 +7,63 @@ const Report = () => {
   const untouchedData = [
     {
       id: 1,
-      company: "Bold text column",
-      client: "Bold text column",
-      email: "Bold text column",
-      contact: "Bold text column",
-      lastCall: "Bold text column",
-      salesExecutive: "Bold text column",
-      lastMonthProject: "Bold text column",
+      name: "Bold text column",
+      totalProjects: "Bold text column",
+      currentProjects: "Bold text column",
+      completedProjects: "Bold text column",
+      joiningDate: "Bold text column",
+      // salesExecutive: "Bold text column",
+      lastMonthProjects: "Bold text column",
     },
     {
       id: 2,
-      company: "Bold text column",
-      client: "Bold text column",
-      email: "Bold text column",
-      contact: "Bold text column",
-      lastCall: "Bold text column",
-      salesExecutive: "Bold text column",
-      lastMonthProject: "Bold text column",
+      name: "Bold text column",
+      totalProjects: "Bold text column",
+      currentProjects: "Bold text column",
+      completedProjects: "Bold text column",
+      joiningDate: "Bold text column",
+      // salesExecutive: "Bold text column",
+      lastMonthProjects: "Bold text column",
     },
     {
       id: 3,
-      company: "Bold text column",
-      client: "Bold text column",
-      email: "Bold text column",
-      contact: "Bold text column",
-      lastCall: "Bold text column",
-      salesExecutive: "Bold text column",
-      lastMonthProject: "Bold text column",
+      name: "Bold text column",
+      totalProjects: "Bold text column",
+      currentProjects: "Bold text column",
+      completedProjects: "Bold text column",
+      joiningDate: "Bold text column",
+      // salesExecutive: "Bold text column",
+      lastMonthProjects: "Bold text column",
     },
     {
       id: 4,
-      company: "Bold text column",
-      client: "Bold text column",
-      email: "Bold text column",
-      contact: "Bold text column",
-      lastCall: "Bold text column",
-      salesExecutive: "Bold text column",
-      lastMonthProject: "Bold text column",
+      name: "Bold text column",
+      totalProjects: "Bold text column",
+      currentProjects: "Bold text column",
+      completedProjects: "Bold text column",
+      joiningDate: "Bold text column",
+      // salesExecutive: "Bold text column",
+      lastMonthProjects: "Bold text column",
     },
     {
       id: 5,
-      company: "Bold text column",
-      client: "Bold text column",
-      email: "Bold text column",
-      contact: "Bold text column",
-      lastCall: "Bold text column",
-      salesExecutive: "Bold text column",
-      lastMonthProject: "Bold text column",
+      name: "Bold text column",
+      totalProjects: "Bold text column",
+      currentProjects: "Bold text column",
+      completedProjects: "Bold text column",
+      joiningDate: "Bold text column",
+      // salesExecutive: "Bold text column",
+      lastMonthProjects: "Bold text column",
     },
     {
       id: 6,
-      company: "Bold text column",
-      client: "Bold text column",
-      email: "Bold text column",
-      contact: "Bold text column",
-      lastCall: "Bold text column",
-      salesExecutive: "Bold text column",
-      lastMonthProject: "Bold text column",
+      name: "Bold text column",
+      totalProjects: "Bold text column",
+      currentProjects: "Bold text column",
+      completedProjects: "Bold text column",
+      joiningDate: "Bold text column",
+      // salesExecutive: "Bold text column",
+      lastMonthProjects: "Bold text column",
     },
   ];
 
@@ -123,12 +123,59 @@ const Report = () => {
           >
             <div style={{ minWidth: "250px", flex: "1" }}>
               <select className="form-select">
-                <option>Month</option>
+                <li>
+                  <option>Month</option>
+                  <option>January</option>
+                  <option>Fabuary</option>
+                  <option>March</option>
+                  <option>April</option>
+                  <option>May</option>
+                  <option>June</option>
+                  <option>July</option>
+                  <option>August</option>
+                  <option>September</option>
+                  <option>October</option>
+                  <option>November</option>
+                  <option>December</option>
+                </li>
               </select>
             </div>
             <div style={{ minWidth: "250px", flex: "1" }}>
               <select className="form-select">
-                <option>Day</option>
+                <li>
+                  <option>Day</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                  <option>31</option>
+                </li>
               </select>
             </div>
             <div style={{ minWidth: "120px" }}>
@@ -177,13 +224,12 @@ const Report = () => {
                 <tbody>
                   {untouchedData.map((data) => (
                     <tr key={data.id} className="border-top">
-                      <td className="small p-3">{data.company}</td>
-                      <td className="small p-3">{data.client}</td>
-                      <td className="small p-3">{data.email}</td>
-                      <td className="small p-3">{data.contact}</td>
-                      <td className="small p-3">{data.lastCall}</td>
-                      <td className="small p-3">{data.lastMonthProject}
-                      </td>
+                      <td className="small p-3">{data.name}</td>
+                      <td className="small p-3">{data.totalProjects}</td>
+                      <td className="small p-3">{data.currentProjects}</td>
+                      <td className="small p-3">{data.completedProjects}</td>
+                      <td className="small p-3">{data.joiningDate}</td>
+                      <td className="small p-3">{data.lastMonthProjects}</td>
 
                       <td
                         className={`small p-3 ${

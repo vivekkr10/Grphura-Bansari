@@ -17,7 +17,7 @@ import ManagementTLSidebar from "./components/managementTL/sidebar"
 import ManagementTLHeader from "./components/managementTL/header"
 
 function App() {
-  const role = localStorage.getItem("role") || "managementTL"; // Example fallback
+  const role = localStorage.getItem("role") || "salesExecutive"; // Example fallback
   const currentRoutes = roleBasedRoutes[role] || [];
 
   // Choose header and sidebar dynamically

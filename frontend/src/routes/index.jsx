@@ -3,6 +3,7 @@ import SE_Dashboard from "../pages/salesExecutive/Dashboard";
 import SE_Prospect from "../pages/salesExecutive/Prospect";
 import SE_Report from "../pages/salesExecutive/Report";
 import SE_SalesReport from "../pages/salesExecutive/SalesReport";
+import SE_UserData from "../pages/salesExecutive/UserData";
 
 import TL_Dashboard from "../pages/salesTeamLead/Dashboard";
 import TL_TransferData from "../pages/salesTeamLead/TransferData";
@@ -14,6 +15,9 @@ import TL_ProspectForm from "../pages/salesTeamLead/ProspectForm";
 
 import SM_Dashboard from "../pages/salesManager/Dashboard"
 import SM_ManagerReport from "../pages/salesManager/managerReport";
+import SM_TotalSales from "../pages/salesManager/TotalSales";
+import SM_Salary from "../pages/salesManager/Salary";
+import SM_UntouchedData from "../pages/salesManager/UntouchedData";
 
 import M_Dashboard from "../pages/managementTL/Dashboard";
 import M_TeamMember from "../pages/managementTL/TeamMember";
@@ -26,6 +30,7 @@ export const roleBasedRoutes = {
     { path: "/prospect", element: <SE_Prospect /> },
     { path: "/sales-report", element: <SE_SalesReport /> },
     { path: "/report", element: <SE_Report /> },
+    { path: "/user-data", element: <SE_UserData /> },
     { path: "*", element: <h2>Page Not Found</h2> },
   ],
 
@@ -41,6 +46,9 @@ export const roleBasedRoutes = {
   salesManager: [
   { path: "/dashboard", element: <SM_Dashboard /> },
   { path: "/manager-report", element: <SM_ManagerReport /> },
+  { path: "/total-sales", element: <SM_TotalSales /> },
+  { path: "/salary", element: <SM_Salary /> },
+  { path: "/untouched-data", element: <SM_UntouchedData /> },
   ],
   
   managementTL: [
