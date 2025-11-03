@@ -1,3 +1,2 @@
 # Grphura-Bansari
 
-Ritik Beriwal

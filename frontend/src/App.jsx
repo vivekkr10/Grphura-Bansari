@@ -25,7 +25,11 @@ function App() {
               <SalesExecutiveHeader />
               <Routes>
                 {currentRoutes.map((route, index) => (
-                  <Route key={index} path={route.path} element={route.element} />
+                  <Route
+                    key={index}
+                    path={route.path}
+                    element={route.element}
+                  />
                 ))}
               </Routes>
             </div>
@@ -40,7 +44,11 @@ function App() {
               <SalesTeamLeadHeader />
               <Routes>
                 {currentRoutes.map((route, index) => (
-                  <Route key={index} path={route.path} element={route.element} />
+                  <Route
+                    key={index}
+                    path={route.path}
+                    element={route.element}
+                  />
                 ))}
               </Routes>
             </div>
