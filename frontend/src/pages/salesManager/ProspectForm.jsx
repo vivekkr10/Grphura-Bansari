@@ -1,6 +1,6 @@
 import "../../style/salesManager/SalesManagerProspectForm.css";
 
-function SalesManagerProspectForm() {
+function ProspectForm() {
   // const handleSubmit = () => {}; TODO  form submission handling
 
   return (
@@ -9,9 +9,9 @@ function SalesManagerProspectForm() {
       <main>
         <div id="prospect-container">
           <div id="card">
-              <h1>Prospect</h1>
+            <h1>Prospect</h1>
             <form id="prospect-form">
-{/* <div id="form-box"></div> */}
+              {/* <div id="form-box"></div> */}
               <div id="form-row">
                 <label htmlFor="form-row">Company Name</label>
                 <input type="text" id="company" name="company" />
@@ -58,4 +58,4 @@ function SalesManagerProspectForm() {
   );
 }
 
-export default SalesManagerProspectForm;
+export default ProspectForm;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../style/salesManager/SalesManagerTeamMember.css";
 
-function SalesManagerTeamMember() {
+function TeamMember() {
   const [viewModal, setViewModal] = useState(false);
   
 
@@ -239,4 +239,4 @@ function SalesManagerTeamMember() {
   );
 }
 
-export default SalesManagerTeamMember;
+export default TeamMember;

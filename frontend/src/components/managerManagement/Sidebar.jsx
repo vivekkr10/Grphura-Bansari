@@ -8,7 +8,7 @@ import review from "../../assets/managerManagement/sidebar/review.png";
 import teamMamber from "../../assets/managerManagement/sidebar/teamMember.png";
 import totalProjects from "../../assets/managerManagement/sidebar/totalProjects.png";
 import teamReport from "../../assets/managerManagement/sidebar/teamReport.png";
-import transferDataFdBK from "../../assets/managerManagement/sidebar/transferDataFdBK.png";
+import transferDataFDBK from "../../assets/managerManagement/sidebar/transferDataFDBK.png";
 import workingProjects from "../../assets/managerManagement/sidebar/workingProjects.png";
 import salary from "../../assets/managerManagement/sidebar/salary.png";
 import "../managerManagement/sidebar.css";
@@ -87,7 +87,7 @@ const Sidebar = () => {
             </li>
 
             <li className="nav-item">
-              <img src={transferDataFdBK} alt="Sales Report Icon" id="nav-icon" />
+              <img src={transferDataFDBK} alt="Sales Report Icon" id="nav-icon" />
               <NavLink to="/transfer-data-to-fdbk">Transfer Data to FDBK.</NavLink>
               <hr className="nav-separator" />
             </li>
