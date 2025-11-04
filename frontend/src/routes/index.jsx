@@ -14,6 +14,7 @@ import TL_UntouchedData from "../pages/salesTeamLead/UntouchedData";
 import TL_TeamMember from "../pages/salesTeamLead/TeamMember";
 import TL_ProspectForm from "../pages/salesTeamLead/ProspectForm";
 import TL_Prospect from "../pages/salesTeamLead/Prospect";
+import TL_Report from "../pages/salesTeamLead/Report"
 
 // salesManager
 import SM_Dashboard from "../pages/salesManager/Dashboard"
@@ -54,7 +55,7 @@ export const roleBasedRoutes = {
   { path: "/prospect", element: <TL_Prospect /> },
   { path: "/team-member", element: <TL_TeamMember /> },
   { path: "/prospect-form", element: <TL_ProspectForm /> },
-  // { path: "/team-report", element: <TL_TeamReport /> },
+  { path: "/report", element: <TL_Report /> },
   ],
 
   salesManager: [
