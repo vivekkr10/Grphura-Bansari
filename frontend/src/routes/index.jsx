@@ -24,7 +24,7 @@ import SM_Salary from "../pages/salesManager/Salary";
 import SM_UntouchedData from "../pages/salesManager/UntouchedData";
 import SM_ProspectForm from "../pages/salesManager/ProspectForm";
 import SM_TeamMember from "../pages/salesManager/TeamMember";
-import SM_TeamReport from "../pages/salesManager/Teamreport"
+import SM_TeamReport from "../pages/salesManager/Report"
 import SM_TransferData from "../pages/salesManager/Transferdata"
 
 // managementTL

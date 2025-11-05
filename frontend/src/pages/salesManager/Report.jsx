@@ -1,7 +1,7 @@
 import React from "react";
 import "../../style/salesManager/teamreport.css";
 
-function Teamreport() {
+function Report() {
   // const [day, setDay] = useState("");
   // const [teamLeader, setTeamLeader] = useState("");
 
@@ -90,4 +90,4 @@ function Teamreport() {
   );
 }
 
-export default Teamreport;
+export default Report;

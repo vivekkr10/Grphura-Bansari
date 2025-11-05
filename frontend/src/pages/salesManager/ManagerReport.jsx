@@ -6,7 +6,7 @@ import totalSales from "../../assets/salesManager/managerReport/totalSales.png";
 import "../../style/salesManager/managerReport.css";
 // import { Button } from "bootstrap";
 
-const Dashboard = () => {
+const ManagerReport = () => {
   const [showUpdatePopup, setShowUpdatepopup] = useState(false);
   const [showViewPopup, setShowViewpopup] = useState(false);
 
@@ -248,4 +248,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default ManagerReport;
