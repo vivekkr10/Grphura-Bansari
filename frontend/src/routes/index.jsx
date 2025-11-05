@@ -24,6 +24,8 @@ import SM_Salary from "../pages/salesManager/Salary";
 import SM_UntouchedData from "../pages/salesManager/UntouchedData";
 import SM_ProspectForm from "../pages/salesManager/ProspectForm";
 import SM_TeamMember from "../pages/salesManager/TeamMember";
+import SM_TeamReport from "../pages/salesManager/Teamreport"
+import SM_TransferData from "../pages/salesManager/Transferdata"
 
 // managementTL
 import M_Dashboard from "../pages/managementTL/Dashboard";
@@ -66,6 +68,8 @@ export const roleBasedRoutes = {
   { path: "/untouched-data", element: <SM_UntouchedData /> },
   { path: "/prospect-form", element: <SM_ProspectForm /> },
   { path: "/team-member", element: <SM_TeamMember /> },
+  { path: "/report", element: <SM_TeamReport /> },
+  { path: "/transfer-data", element: <SM_TransferData /> },
   ],
   
   managementTL: [
