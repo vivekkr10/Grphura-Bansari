@@ -41,7 +41,7 @@ import MM_Dashboard from "../pages/managerManagement/Dashboard";
 import MM_ManagerReport from "../pages/managerManagement/managerReport";
 
 // feedbackEmployee
-import FE_Dashboard from "../pages/feednackEmployee/Dashboard";
+import FE_Dashboard from "../pages/feedBackEmployee/Dashboard";
 
 export const roleBasedRoutes = {
   salesExecutive: [
