@@ -32,9 +32,12 @@ import M_Dashboard from "../pages/managementTL/Dashboard";
 import M_TeamMember from "../pages/managementTL/TeamMember";
 import M_Review from "../pages/managementTL/Review";
 import M_Report from "../pages/managementTL/Report";
+// import M_PayOut from "../pages/managementTL/Payout";
 
 // managerEmployee
 import ME_Dashboard from "../pages/managementEmployee/Dashboard"
+// import ME_CompleteProjects from "../pages/managementEmployee/CompleteProjects"
+// import ME_PayOut from "../pages/managementEmployee/PayOut"
 
 // managerManagement
 import MM_Dashboard from "../pages/managerManagement/Dashboard";
@@ -77,10 +80,13 @@ export const roleBasedRoutes = {
   { path: "/team-member", element: <M_TeamMember /> },
   { path: "/review", element: <M_Review /> },
   { path: "/report", element: <M_Report /> },
+  // { path: "/payout", element: <M_PayOut />},
   ],
 
   managementEmployee: [
   { path: "/dashboard", element: <ME_Dashboard /> },
+  // {path: "/completeprojects", element: <ME_CompleteProjects/>},
+  // {path: "/payout", element: <ME_PayOut/>},
   // { path: "/team-member", element: <M_TeamMember /> },
   // { path: "/review", element: <M_Review /> },
   // { path: "/report", element: <M_Report /> },
