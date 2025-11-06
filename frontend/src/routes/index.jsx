@@ -40,6 +40,9 @@ import ME_Dashboard from "../pages/managementEmployee/Dashboard"
 import MM_Dashboard from "../pages/managerManagement/Dashboard";
 import MM_ManagerReport from "../pages/managerManagement/managerReport";
 
+// feedbackEmployee
+import FE_Dashboard from "../pages/feednackEmployee/Dashboard";
+
 export const roleBasedRoutes = {
   salesExecutive: [
     { path: "/dashboard", element: <SE_Dashboard /> },
@@ -89,6 +92,14 @@ export const roleBasedRoutes = {
   managerManagement: [
   { path: "/dashboard", element: <MM_Dashboard /> },
   { path: "/manager-report", element: <MM_ManagerReport /> },
+  // { path: "/team-member", element: <M_TeamMember /> },
+  // { path: "/review", element: <M_Review /> },
+  // { path: "/report", element: <M_Report /> },
+  ],
+
+  feedbackEmployee: [
+  { path: "/dashboard", element: <FE_Dashboard /> },
+  // { path: "/manager-report", element: <MM_ManagerReport /> },
   // { path: "/team-member", element: <M_TeamMember /> },
   // { path: "/review", element: <M_Review /> },
   // { path: "/report", element: <M_Report /> },
