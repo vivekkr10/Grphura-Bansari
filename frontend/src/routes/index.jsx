@@ -35,6 +35,7 @@ import M_Report from "../pages/managementTL/Report";
 
 // managerEmployee
 import ME_Dashboard from "../pages/managementEmployee/Dashboard"
+import ME_Help from "../pages/managementEmployee/Memphelp"
 
 // managerManagement
 import MM_Dashboard from "../pages/managerManagement/Dashboard";
@@ -87,6 +88,7 @@ export const roleBasedRoutes = {
   // { path: "/team-member", element: <M_TeamMember /> },
   // { path: "/review", element: <M_Review /> },
   // { path: "/report", element: <M_Report /> },
+  { path: "/help", element: <ME_Help /> },
   ],
 
   managerManagement: [
