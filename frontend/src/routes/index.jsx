@@ -32,6 +32,8 @@ import M_Dashboard from "../pages/managementTL/Dashboard";
 import M_TeamMember from "../pages/managementTL/TeamMember";
 import M_Review from "../pages/managementTL/Review";
 import M_Report from "../pages/managementTL/Report";
+import M_MyProjects from "../pages/managementTL/MyProjects";
+import M_TransferProjects from "../pages/managementTL/TransferProject";
 
 // managerEmployee
 import ME_Dashboard from "../pages/managementEmployee/Dashboard"
@@ -40,6 +42,11 @@ import ME_Help from "../pages/managementEmployee/Help"
 // managerManagement
 import MM_Dashboard from "../pages/managerManagement/Dashboard";
 import MM_ManagerReport from "../pages/managerManagement/managerReport";
+import MM_RecieveData from "../pages/managerManagement/RecieveData";
+import MM_Review from "../pages/managerManagement/Review";
+import MM_TotalProjects from "../pages/managerManagement/TotalProjects";
+import MM_TransferDataFDBK from "../pages/managerManagement/TransferDataFDBK";
+import MM_WorkingProject from "../pages/managerManagement/WorkingProject";
 
 // feedbackEmployee
 import FE_Dashboard from "../pages/feedBackEmployee/Dashboard";
@@ -81,6 +88,9 @@ export const roleBasedRoutes = {
   { path: "/team-member", element: <M_TeamMember /> },
   { path: "/review", element: <M_Review /> },
   { path: "/report", element: <M_Report /> },
+  { path: "/projects", element: <M_MyProjects /> },
+  { path: "/projects", element: <M_MyProjects /> },
+  { path: "/transfer-projects", element: <M_TransferProjects /> },
   ],
 
   managementEmployee: [
@@ -94,9 +104,11 @@ export const roleBasedRoutes = {
   managerManagement: [
   { path: "/dashboard", element: <MM_Dashboard /> },
   { path: "/manager-report", element: <MM_ManagerReport /> },
-  // { path: "/team-member", element: <M_TeamMember /> },
-  // { path: "/review", element: <M_Review /> },
-  // { path: "/report", element: <M_Report /> },
+  { path: "/recived-data", element: <MM_RecieveData /> },
+  { path: "/review", element: <MM_Review /> },
+  { path: "/total-projects", element: <MM_TotalProjects /> },
+  { path: "/transfer-data-to-feedback", element: <MM_TransferDataFDBK /> },
+  { path: "/working-projects", element: <MM_WorkingProject /> },
   ],
 
   feedbackEmployee: [
