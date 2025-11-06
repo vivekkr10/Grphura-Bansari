@@ -35,7 +35,7 @@ import M_Report from "../pages/managementTL/Report";
 
 // managerEmployee
 import ME_Dashboard from "../pages/managementEmployee/Dashboard"
-import ME_Help from "../pages/managementEmployee/Memphelp"
+import ME_Help from "../pages/managementEmployee/Help"
 
 // managerManagement
 import MM_Dashboard from "../pages/managerManagement/Dashboard";

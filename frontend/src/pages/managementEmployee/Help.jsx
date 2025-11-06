@@ -1,7 +1,7 @@
 import React from 'react'
 import "../../style/managementEmployee/memphelp.css"
 
-function Memphelp() {
+function Help() {
 const helpdata=[
      ...Array(6).fill({
       designation: "Bold text column",
@@ -44,4 +44,4 @@ const helpdata=[
   )
 }
 
-export default Memphelp
+export default Help
