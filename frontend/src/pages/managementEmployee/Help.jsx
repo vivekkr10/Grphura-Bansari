@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../style/managementEmployee/memphelp.css"
+import "../../style/managementEmployee/help.css"
 
 function Help() {
 const helpdata=[
