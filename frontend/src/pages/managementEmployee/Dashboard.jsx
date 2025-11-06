@@ -14,7 +14,7 @@ const Dashboard = () => {
   const openPopup = () => setShowpopup(true);
   const closePopup = () => setShowpopup(false);
 
-  return (
+  return (  
     <main>
       <div id="dashboard">
         <div id="dashboard-container">
