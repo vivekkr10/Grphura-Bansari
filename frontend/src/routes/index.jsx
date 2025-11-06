@@ -24,7 +24,7 @@ import SM_Salary from "../pages/salesManager/Salary";
 import SM_UntouchedData from "../pages/salesManager/UntouchedData";
 import SM_ProspectForm from "../pages/salesManager/ProspectForm";
 import SM_TeamMember from "../pages/salesManager/TeamMember";
-import SM_TeamReport from "../pages/salesManager/Teamreport"
+import SM_TeamReport from "../pages/salesManager/Report"
 import SM_TransferData from "../pages/salesManager/Transferdata"
 
 // managementTL
@@ -35,10 +35,14 @@ import M_Report from "../pages/managementTL/Report";
 
 // managerEmployee
 import ME_Dashboard from "../pages/managementEmployee/Dashboard"
+import ME_Help from "../pages/managementEmployee/Memphelp"
 
 // managerManagement
 import MM_Dashboard from "../pages/managerManagement/Dashboard";
 import MM_ManagerReport from "../pages/managerManagement/managerReport";
+
+// feedbackEmployee
+import FE_Dashboard from "../pages/feednackEmployee/Dashboard";
 
 export const roleBasedRoutes = {
   salesExecutive: [
@@ -84,11 +88,20 @@ export const roleBasedRoutes = {
   // { path: "/team-member", element: <M_TeamMember /> },
   // { path: "/review", element: <M_Review /> },
   // { path: "/report", element: <M_Report /> },
+  { path: "/help", element: <ME_Help /> },
   ],
 
   managerManagement: [
   { path: "/dashboard", element: <MM_Dashboard /> },
   { path: "/manager-report", element: <MM_ManagerReport /> },
+  // { path: "/team-member", element: <M_TeamMember /> },
+  // { path: "/review", element: <M_Review /> },
+  // { path: "/report", element: <M_Report /> },
+  ],
+
+  feedbackEmployee: [
+  { path: "/dashboard", element: <FE_Dashboard /> },
+  // { path: "/manager-report", element: <MM_ManagerReport /> },
   // { path: "/team-member", element: <M_TeamMember /> },
   // { path: "/review", element: <M_Review /> },
   // { path: "/report", element: <M_Report /> },
