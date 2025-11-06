@@ -59,7 +59,7 @@ const Sidebar = () => {
 
             <li className="nav-item">
               <img src={transferProjects} alt="Prospect Icon" id="nav-icon" />
-              <NavLink to="/total-projects">Total Projects</NavLink>
+              <NavLink to="/transfer-projects">Transfer Projects</NavLink>
               <hr className="nav-separator" />
             </li>
 
