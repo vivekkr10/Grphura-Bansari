@@ -35,7 +35,7 @@ import M_Report from "../pages/managementTL/Report";
 import M_MyProjects from "../pages/managementTL/MyProjects";
 import M_TransferProjects from "../pages/managementTL/TransferProject";
 
-// managerEmployee
+// managementEmployee
 import ME_Dashboard from "../pages/managementEmployee/Dashboard"
 import ME_Help from "../pages/managementEmployee/Help"
 
