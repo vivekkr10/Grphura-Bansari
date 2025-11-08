@@ -25,6 +25,9 @@ import ManagerManagementHeader from "./components/managerManagement/Header";
 import FeedbackManagerSidebar from "./components/feedbackmanager/Sidebar";
 import FeedbackManagerHeader from "./components/feedbackmanager/Header";
 
+import FeedbackEmployeeSidebar from "./components/feedbackEmployee/Sidebar"
+import FeedbackEmployeeHeader from "./components/feedbackEmployee/Header"
+
 function App() {
   const role = localStorage.getItem("role") || "feedbackManager"; // Example fallback
   const currentRoutes = roleBasedRoutes[role] || [];
@@ -163,8 +166,26 @@ function App() {
             </div>
           </>
         );
+      
+      case "feedbackEmployee":
+        return (
+          <>
+            <FeedbackEmployeeSidebar />
+            <div>
+              <FeedbackEmployeeHeader />
+              <Routes>
+                {currentRoutes.map((route, index) => (
+                  <Route
+                    key={index}
+                    path={route.path}
+                    element={route.element}
+                  />
+                ))}
+              </Routes>
+            </div>
+          </>
+        );
 
-      // 🧩 Add other 9 roles below in the same pattern
       default:
         return <div>Role not found</div>;
     }

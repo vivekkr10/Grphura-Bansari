@@ -88,13 +88,13 @@ const Sidebar = () => {
 
             <li className="nav-item">
               <img src={transferDataFDBK} alt="Sales Report Icon" id="nav-icon" />
-              <NavLink to="/transfer-data-to-fdbk">Transfer Data to FDBK.</NavLink>
+              <NavLink to="/transfer-data-to-feedback">Transfer Data to FDBK.</NavLink>
               <hr className="nav-separator" />
             </li>
 
             <li className="nav-item">
               <img src={review} alt="Sales Report Icon" id="nav-icon" />
-              <NavLink to="/Review">Review</NavLink>
+              <NavLink to="/review">Review</NavLink>
               <hr className="nav-separator" />
             </li>
             

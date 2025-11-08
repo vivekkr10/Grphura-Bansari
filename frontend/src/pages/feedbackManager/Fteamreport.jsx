@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../style/feedbackfeedbackreport/fteamreport.css"
+import "../../style/feedbackManager/fteamreport.css"
 
 function Fteamreport(){
     // const [day, setDay] = useState("");

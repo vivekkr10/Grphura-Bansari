@@ -29,12 +29,18 @@ import SM_TransferData from "../pages/salesManager/Transferdata"
 
 // managementTL
 import M_Dashboard from "../pages/managementTL/Dashboard";
+import M_MyProjects from "../pages/managementTL/MyProjects";
+import M_TransferProjects from "../pages/managementTL/TransferProject";
 import M_TeamMember from "../pages/managementTL/TeamMember";
-import M_Review from "../pages/managementTL/Review";
 import M_Report from "../pages/managementTL/Report";
+import M_Payout from "../pages/managementTL/Payout";
+import M_Review from "../pages/managementTL/Review";
 
-// managerEmployee
+
+// managementEmployee
 import ME_Dashboard from "../pages/managementEmployee/Dashboard"
+import ME_CompleteProjects from "../pages/managementEmployee/CompleteProjects";
+import ME_PayOut from "../pages/managementEmployee/PayOut";
 import ME_Help from "../pages/managementEmployee/Help"
 
 // managerManagement
@@ -43,8 +49,20 @@ import MM_ManagerReport from "../pages/managerManagement/managerReport";
 import MM_TeamReport from "../pages/managerManagement/Mgmtteamreport";
 import MM_ManagerSalary from "../pages/managerManagement/ManagerSalary";
 
+import MM_RecieveData from "../pages/managerManagement/RecieveData";
+import MM_Review from "../pages/managerManagement/Review";
+import MM_TotalProjects from "../pages/managerManagement/TotalProjects";
+import MM_TransferDataFDBK from "../pages/managerManagement/TransferDataFDBK";
+import MM_WorkingProject from "../pages/managerManagement/WorkingProject";
+
+// feedbackManager
+import FM_Dashboard from "../pages/feedbackManager/Dashboard";
+import FM_Report from "../pages/feedbackManager/Fteamreport"
+
+
 // feedbackEmployee
 import FE_Dashboard from "../pages/feedBackEmployee/Dashboard";
+import FE_Salary from "../pages/feedBackEmployee/FeedbackEmployeeSalary"
 
 export const roleBasedRoutes = {
   salesExecutive: [
@@ -80,34 +98,45 @@ export const roleBasedRoutes = {
   
   managementTL: [
   { path: "/dashboard", element: <M_Dashboard /> },
-  { path: "/team-member", element: <M_TeamMember /> },
-  { path: "/review", element: <M_Review /> },
+  { path: "/projects", element: <M_MyProjects /> },
+  { path: "/transfer-projects", element: <M_TransferProjects /> },
   { path: "/report", element: <M_Report /> },
+  { path: "/team-member", element: <M_TeamMember /> },
+  { path: "/payout", element: <M_Payout /> },
+  { path: "/review", element: <M_Review /> },
   ],
 
   managementEmployee: [
   { path: "/dashboard", element: <ME_Dashboard /> },
-  // { path: "/team-member", element: <M_TeamMember /> },
-  // { path: "/review", element: <M_Review /> },
-  // { path: "/report", element: <M_Report /> },
+  { path: "/completed-projects", element: <ME_CompleteProjects /> },
+  { path: "/payout", element: <ME_PayOut /> },
   { path: "/help", element: <ME_Help /> },
   ],
 
   managerManagement: [
   { path: "/dashboard", element: <MM_Dashboard /> },
   { path: "/manager-report", element: <MM_ManagerReport /> },
+
   // { path: "/team-member", element: <M_TeamMember /> },
   // { path: "/review", element: <M_Review /> },
     { path: "/report", element: <MM_TeamReport /> },
     { path: "/salary", element: <MM_ManagerSalary /> },
+  { path: "/recived-data", element: <MM_RecieveData /> },
+  { path: "/review", element: <MM_Review /> },
+  { path: "/total-projects", element: <MM_TotalProjects /> },
+  { path: "/transfer-data-to-feedback", element: <MM_TransferDataFDBK /> },
+  { path: "/working-projects", element: <MM_WorkingProject /> },
+  ],
+
+  feedbackManager: [
+  { path: "/dashboard", element: <FM_Dashboard /> },
+  { path: "/salary", element: <FE_Salary /> },
+  { path: "/report", element: <FM_Report /> },
   ],
 
   feedbackEmployee: [
   { path: "/dashboard", element: <FE_Dashboard /> },
-  // { path: "/manager-report", element: <MM_ManagerReport /> },
-  // { path: "/team-member", element: <M_TeamMember /> },
-  // { path: "/review", element: <M_Review /> },
-  // { path: "/report", element: <M_Report /> },
+  { path: "/salary", element: <FE_Salary /> },
   ],
   
 };
