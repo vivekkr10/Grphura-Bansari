@@ -54,6 +54,7 @@ import MM_WorkingProject from "../pages/managerManagement/WorkingProject";
 
 // feedbackEmployee
 import FE_Dashboard from "../pages/feedBackEmployee/Dashboard";
+import FE_Salary from "../pages/feedBackEmployee/FeedbackEmployeeSalary"
 
 export const roleBasedRoutes = {
   salesExecutive: [
@@ -116,6 +117,7 @@ export const roleBasedRoutes = {
 
   feedbackEmployee: [
   { path: "/dashboard", element: <FE_Dashboard /> },
+  { path: "/salary", element: <FE_Salary /> },
   ],
   
 };

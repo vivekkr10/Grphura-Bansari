@@ -175,7 +175,7 @@ body {
   padding: 10px 10px 30px 10px;
   display: flex;
   flex-direction: column;
-  width: 95%;
+  width: 100%;
 }
 
 .custom-table {
@@ -196,7 +196,7 @@ body {
   padding: 10px 19px;
   text-align: left;
   border-bottom: 1px solid #ddd;
-  font-weight: ;
+  font-weight: 600px;
 }
 
 .custom-table th {
