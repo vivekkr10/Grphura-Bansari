@@ -3,51 +3,50 @@ import "../../style/managementEmployee/PayOut.css";
 import calender from "../../assets/managementEmployee/PayOut/calender.png";
 import money from "../../assets/managementEmployee/PayOut/money.png";
 
-
 function PayOut() {
   return (
     <>
-    <main>
-        <div className="container">
-          <div className="top">
-            <div className="left">
+      <main id='payout-main'>
+        <div id="payout-container">
+          <div id="payout-top">
+            <div id="payout-left">
               <h1>Pay Out</h1>
 
-              <div className="filters">
-                <div className="field">
+              <div id="payout-filters">
+                <div id="payout-field">
                   <span>Start Date</span>
-                  <span className="icon"><img src={calender} alt="Calendar Icon" /></span>
+                  <span id="payout-icon"><img src={calender} alt="Calendar Icon" /></span>
                 </div>
-                <div className="field">
+                <div id="payout-field2">
                   <span>End Date</span>
-                  <span className="icon"><img src={calender} alt="Calendar Icon" /></span>
+                  <span id="payout-icon2"><img src={calender} alt="Calendar Icon" /></span>
                 </div>
-                <div className="actions">
-                  <button className="field-btn">Search</button>
+                <div id="payout-actions">
+                  <button id="payout-field-btn">Search</button>
                 </div>
               </div>
             </div>
 
-            <aside className="stats">
-              <div className="stat-card blue">
-                <div className="stat-title">TOTAL PAY OUT</div>
-                <div className="stat-body">
-                  <div className="stat-number">4</div>
-                  <div className="rupee"><img src={money} alt="" /></div>
+            <aside id="payout-stats">
+              <div id="payout-stat-card-blue">
+                <div id="payout-stat-title-blue">TOTAL PAY OUT</div>
+                <div id="payout-stat-body-blue">
+                  <div id="payout-stat-number-blue">4</div>
+                  <div id="payout-rupee-blue"><img src={money} alt="" /></div>
                 </div>
               </div>
 
-              <div className="stat-card green">
-                <div className="stat-title">LAST MONTH PAY OUT</div>
-                <div className="stat-body">
-                  <div className="stat-number">5</div>
-                  <div className="rupee"><img src={money} alt="" /></div>
+              <div id="payout-stat-card-green">
+                <div id="payout-stat-title-green">LAST MONTH PAY OUT</div>
+                <div id="payout-stat-body-green">
+                  <div id="payout-stat-number-green">5</div>
+                  <div id="payout-rupee-green"><img src={money} alt="" /></div>
                 </div>
               </div>
             </aside>
           </div>
 
-          <div className="table-card">
+          <div id="payout-table-card">
             <table>
               <thead>
                 <tr>
@@ -60,66 +59,18 @@ function PayOut() {
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>
-                    <button>View</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>
-                    <button>View</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>
-                    <button>View</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>
-                    <button>View</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>
-                    <button>View</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>
-                    <button>View</button>
-                  </td>
-                </tr>
+                {[1,2,3,4,5,6].map((row, index) => (
+                  <tr key={index}>
+                    <td>Bold Text Columns</td>
+                    <td>Bold Text Columns</td>
+                    <td>Bold Text Columns</td>
+                    <td>Bold Text Columns</td>
+                    <td>Bold Text Columns</td>
+                    <td>
+                      <button>View</button>
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
@@ -129,4 +80,4 @@ function PayOut() {
   )
 }
 
-export default PayOut
+export default PayOut;

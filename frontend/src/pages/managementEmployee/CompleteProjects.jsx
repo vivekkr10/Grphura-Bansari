@@ -4,10 +4,10 @@ import "../../style/managementEmployee/CompleteProjects.css";
 function CompleteProjects() {
   return (
     <>
-      <main>
-        <div className="main-content">
+      <main id="">
+        <div id="main-content">
           <p>Completed Projects</p>
-          <div className="table-content">
+          <div id="table-content">
             <table>
               <thead>
                 <tr>

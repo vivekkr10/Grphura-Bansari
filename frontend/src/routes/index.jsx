@@ -29,15 +29,18 @@ import SM_TransferData from "../pages/salesManager/Transferdata"
 
 // managementTL
 import M_Dashboard from "../pages/managementTL/Dashboard";
-import M_TeamMember from "../pages/managementTL/TeamMember";
-import M_Review from "../pages/managementTL/Review";
-import M_Report from "../pages/managementTL/Report";
 import M_MyProjects from "../pages/managementTL/MyProjects";
 import M_TransferProjects from "../pages/managementTL/TransferProject";
+import M_TeamMember from "../pages/managementTL/TeamMember";
+import M_Report from "../pages/managementTL/Report";
+import M_Payout from "../pages/managementTL/Payout";
+import M_Review from "../pages/managementTL/Review";
 
 
 // managementEmployee
 import ME_Dashboard from "../pages/managementEmployee/Dashboard"
+import ME_CompleteProjects from "../pages/managementEmployee/CompleteProjects";
+import ME_PayOut from "../pages/managementEmployee/PayOut";
 import ME_Help from "../pages/managementEmployee/Help"
 
 // managerManagement
@@ -86,21 +89,18 @@ export const roleBasedRoutes = {
   
   managementTL: [
   { path: "/dashboard", element: <M_Dashboard /> },
-  { path: "/team-member", element: <M_TeamMember /> },
-  { path: "/review", element: <M_Review /> },
-  { path: "/report", element: <M_Report /> },
-  { path: "/projects", element: <M_MyProjects /> },
   { path: "/projects", element: <M_MyProjects /> },
   { path: "/transfer-projects", element: <M_TransferProjects /> },
+  { path: "/report", element: <M_Report /> },
+  { path: "/team-member", element: <M_TeamMember /> },
+  { path: "/payout", element: <M_Payout /> },
+  { path: "/review", element: <M_Review /> },
   ],
 
   managementEmployee: [
   { path: "/dashboard", element: <ME_Dashboard /> },
-  // {path: "/completeprojects", element: <ME_CompleteProjects/>},
-  // {path: "/payout", element: <ME_PayOut/>},
-  // { path: "/team-member", element: <M_TeamMember /> },
-  // { path: "/review", element: <M_Review /> },
-  // { path: "/report", element: <M_Report /> },
+  { path: "/completed-projects", element: <ME_CompleteProjects /> },
+  { path: "/payout", element: <ME_PayOut /> },
   { path: "/help", element: <ME_Help /> },
   ],
 
@@ -116,10 +116,6 @@ export const roleBasedRoutes = {
 
   feedbackEmployee: [
   { path: "/dashboard", element: <FE_Dashboard /> },
-  // { path: "/manager-report", element: <MM_ManagerReport /> },
-  // { path: "/team-member", element: <M_TeamMember /> },
-  // { path: "/review", element: <M_Review /> },
-  // { path: "/report", element: <M_Report /> },
   ],
   
 };

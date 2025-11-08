@@ -1,18 +1,18 @@
 import React from "react";
 import "../../style/managementTL/PayOut.css";
-import calender from "../../assets/managementTL/PayOut/calender.png"
-import money from "../../assets/managementTL/PayOut/money.png"
+import calender from "../../assets/managementTL/PayOut/calender.png";
+import money from "../../assets/managementTL/PayOut/money.png";
 
-function PayOut() {
+function Payout() {
   return (
     <>
-      <main>
-         <h1>Pay Out</h1>
-        <div className="container">
-          <div className="top">
-            <div className="left">
-              <div className="select">
-                <select id="employee" name="employee">
+      <main id="payout-main">
+        <h1>Pay Out</h1>
+        <div id="tl-payout-container">
+          <div id="tl-payout-top">
+            <div id="tl-payout-left">
+              <div id="tl-payout-select">
+                <select id="tl-employee" name="employee">
                   <option value="" disabled selected>
                     Select Employee
                   </option>
@@ -23,45 +23,49 @@ function PayOut() {
                 </select>
               </div>
 
-              <div class="filters">
-                <div class="field">
+              <div id="tl-payout-filters">
+                <div id="tl-payout-field1">
                   <span>Start Date</span>
-                  <span class="icon">
+                  <span id="tl-payout-icon1">
                     <img src={calender} alt="Calendar Icon" />
                   </span>
                 </div>
-                <div class="field">
+                <div id="tl-payout-field2">
                   <span>End Date</span>
-                  <span class="icon">
+                  <span id="tl-payout-icon2">
                     <img src={calender} alt="Calendar Icon" />
                   </span>
                 </div>
-                <div class="actions">
-                  <button class="field-btn">Search</button>
+                <div id="tl-payout-actions">
+                  <button id="tl-payout-field-btn">Search</button>
                 </div>
               </div>
             </div>
 
-            <aside class="stats">
-              <div class="stat-card blue">
-                <div class="stat-title">TOTAL PAY OUT</div>
-                <div class="stat-body">
-                  <div class="stat-number">400000</div>
-                  <div class="rupee"><img src={money} alt="" /></div>
+            <aside id="tl-payout-stats">
+              <div id="tl-payout-stat-card-blue">
+                <div id="tl-payout-stat-title-blue">TOTAL PAY OUT</div>
+                <div id="tl-payout-stat-body-blue">
+                  <div id="tl-payout-stat-number-blue">400000</div>
+                  <div id="tl-payout-rupee-blue">
+                    <img src={money} alt="" />
+                  </div>
                 </div>
               </div>
 
-              <div class="stat-card green">
-                <div class="stat-title">LAST MONTH PAY OUT</div>
-                <div class="stat-body">
-                  <div class="stat-number">500000</div>
-                  <div class="rupee"><img src={money} alt="" /></div>
+              <div id="tl-payout-stat-card-green">
+                <div id="tl-payout-stat-title-green">LAST MONTH PAY OUT</div>
+                <div id="tl-payout-stat-body-green">
+                  <div id="tl-payout-stat-number-green">500000</div>
+                  <div id="tl-payout-rupee-green">
+                    <img src={money} alt="" />
+                  </div>
                 </div>
               </div>
             </aside>
           </div>
 
-          <div class="table-card">
+          <div id="tl-payout-table-card">
             <table>
               <thead>
                 <tr>
@@ -74,66 +78,18 @@ function PayOut() {
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>
-                    <button>View</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>
-                    <button>View</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>
-                    <button>View</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>
-                    <button>View</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>
-                    <button>View</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>Bold Text Columns</td>
-                  <td>
-                    <button>View</button>
-                  </td>
-                </tr>
+                {[1, 2, 3, 4, 5, 6].map((row, index) => (
+                  <tr key={index}>
+                    <td>Bold Text Columns</td>
+                    <td>Bold Text Columns</td>
+                    <td>Bold Text Columns</td>
+                    <td>Bold Text Columns</td>
+                    <td>Bold Text Columns</td>
+                    <td>
+                      <button>View</button>
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
@@ -143,4 +99,4 @@ function PayOut() {
   );
 }
 
-export default PayOut;
+export default Payout;
