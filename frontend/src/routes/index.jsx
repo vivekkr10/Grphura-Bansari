@@ -40,6 +40,8 @@ import ME_Help from "../pages/managementEmployee/Help"
 // managerManagement
 import MM_Dashboard from "../pages/managerManagement/Dashboard";
 import MM_ManagerReport from "../pages/managerManagement/managerReport";
+import MM_TeamReport from "../pages/managerManagement/Mgmtteamreport";
+import MM_ManagerSalary from "../pages/managerManagement/ManagerSalary";
 
 // feedbackEmployee
 import FE_Dashboard from "../pages/feedBackEmployee/Dashboard";
@@ -96,7 +98,8 @@ export const roleBasedRoutes = {
   { path: "/manager-report", element: <MM_ManagerReport /> },
   // { path: "/team-member", element: <M_TeamMember /> },
   // { path: "/review", element: <M_Review /> },
-  // { path: "/report", element: <M_Report /> },
+    { path: "/report", element: <MM_TeamReport /> },
+    { path: "/salary", element: <MM_ManagerSalary /> },
   ],
 
   feedbackEmployee: [
