@@ -55,6 +55,9 @@ import MM_WorkingProject from "../pages/managerManagement/WorkingProject";
 // feedbackEmployee
 import FE_Dashboard from "../pages/feedBackEmployee/Dashboard";
 
+//feedbackManager
+import FM_Complaint from "../pages/feedbackManager/complaints";
+
 export const roleBasedRoutes = {
   salesExecutive: [
     { path: "/dashboard", element: <SE_Dashboard /> },
@@ -116,6 +119,10 @@ export const roleBasedRoutes = {
 
   feedbackEmployee: [
   { path: "/dashboard", element: <FE_Dashboard /> },
+  ],
+
+  feedbackManager: [
+    {path: "/complaints", element: <FM_Complaint/>}
   ],
   
 };
