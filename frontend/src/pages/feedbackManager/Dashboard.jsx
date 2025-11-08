@@ -3,18 +3,18 @@ import "../../style/feedbackManager/feedbackManagerDashboard.css"
 import ManagerDashboardChart from './ManagerDashboardChart'
 
 // Assets
-  import totalData from "../../assets/feedbackManger/totalData.svg"
-  import TOTALFEEDBACKs from"../../assets/feedbackManger/TOTALFEEDBACKs.svg"
-  import TOTALCOMPLAINTS from"../../assets/feedbackManger/TOTALCOMPLAINTS.svg"
-  import REMAININGFEEDBACKS from "../../assets/feedbackManger/REMAININGFEEDBACKS.png"
-  import UNSOLVEDCOMPLAINTS from "../../assets/feedbackManger/UNSOLVEDCOMPLAINTS.png"
-  import TOTALTEAM from "../../assets/feedbackManger/TOTALTEAM.png"
-  import TOTALINCOME from "../../assets/feedbackManger/TOTALINCOME.png"
+  import totalData from "../../assets/feedbackManager/dashboard/totalData.png"
+  import TOTALFEEDBACKs from"../../assets/feedbackManager/dashboard/totalFeedback.svg"
+  import TOTALCOMPLAINTS from"../../assets/feedbackManager/dashboard/TOTALCOMPLAINTS.svg"
+  import REMAININGFEEDBACKS from "../../assets/feedbackManager/dashboard/REMAININGFEEDBACKS.png"
+  import UNSOLVEDCOMPLAINTS from "../../assets/feedbackManager/dashboard/UNSOLVEDCOMPLAINTS.png"
+  import TOTALTEAM from "../../assets/feedbackManager/dashboard/TOTALTEAM.png"
+  import TOTALINCOME from "../../assets/feedbackManager/dashboard/TOTALINCOME.png"
 
 
 
 
-function FeedbackManagerDashboard() {
+function Dashboard() {
   return (
     <>
         <div className='feedbackManagerDashboardMainContainer'>
@@ -112,4 +112,4 @@ function FeedbackManagerDashboard() {
   )
 }
 
-export default FeedbackManagerDashboard;
+export default Dashboard;

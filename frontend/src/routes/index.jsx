@@ -52,6 +52,9 @@ import MM_TotalProjects from "../pages/managerManagement/TotalProjects";
 import MM_TransferDataFDBK from "../pages/managerManagement/TransferDataFDBK";
 import MM_WorkingProject from "../pages/managerManagement/WorkingProject";
 
+// feedbackManager
+import FM_Dashboard from "../pages/feedbackManager/Dashboard";
+
 // feedbackEmployee
 import FE_Dashboard from "../pages/feedBackEmployee/Dashboard";
 import FE_Salary from "../pages/feedBackEmployee/FeedbackEmployeeSalary"
@@ -113,6 +116,11 @@ export const roleBasedRoutes = {
   { path: "/total-projects", element: <MM_TotalProjects /> },
   { path: "/transfer-data-to-feedback", element: <MM_TransferDataFDBK /> },
   { path: "/working-projects", element: <MM_WorkingProject /> },
+  ],
+
+  feedbackManager: [
+  { path: "/dashboard", element: <FM_Dashboard /> },
+  { path: "/salary", element: <FE_Salary /> },
   ],
 
   feedbackEmployee: [
