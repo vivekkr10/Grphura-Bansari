@@ -1,7 +1,7 @@
 import React from 'react'
 import "../../style/FeedbackEmployee/FeedbackEmployeeSalary.css"
 
-function FeedbackEmployeeSalary() {
+function Salary() {
 
   const datai = [
     {
@@ -89,4 +89,4 @@ function FeedbackEmployeeSalary() {
   )
 }
 
-export default FeedbackEmployeeSalary
+export default Salary

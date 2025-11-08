@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
-const PendingFeedbacks = () => {
+const Feedbacks = () => {
   const [key, setKey] = useState("pending");
   const [openPending, setOpenPending] = useState(null);
   const [openCompleted, setOpenCompleted] = useState(null);
@@ -461,4 +461,4 @@ const PendingFeedbacks = () => {
   );
 };
 
-export default PendingFeedbacks;
+export default Feedbacks;
