@@ -35,7 +35,7 @@ const Sidebar = () => {
             <img src={profile} alt="Profile Icon" id="profile-img" />
             <div id="profile-details">
               <h1 id="profile-name">Name</h1>
-              <p id="profile-title">Manager / Management</p>
+              <p id="profile-title">Feedback / Manager</p>
             </div>
           </div>
 
