@@ -58,11 +58,9 @@ import MM_WorkingProject from "../pages/managerManagement/WorkingProject";
 // feedbackManager
 import FM_Dashboard from "../pages/feedbackManager/Dashboard";
 import FM_Report from "../pages/feedbackManager/Fteamreport"
-
-
 import FM_Feedbacks from "../pages/feedbackManager/Feedbacks";
-// import FM_Salary from "../pages/feedbackManager/Salary";
-import FM_Report from "../pages/feedbackManager/Fteamreport"
+import FM_Salary from "../pages/feedbackManager/FeedbackSalary";
+
 
 
 // feedbackEmployee
@@ -139,10 +137,10 @@ export const roleBasedRoutes = {
 
   feedbackManager: [
   { path: "/dashboard", element: <FM_Dashboard /> },
-  { path: "/salary", element: <FE_Salary /> },
+  { path: "/salary", element: <FM_Salary /> },
   { path: "/report", element: <FM_Report /> },
   { path: "/feedbacks", element: <FM_Feedbacks /> },
-  // { path: "/salary", element: <FM_Salary /> },
+  {path: "/complaints", element: <FM_Complaint/>}
   ],
 
   feedbackEmployee: [
@@ -151,8 +149,4 @@ export const roleBasedRoutes = {
     { path: "/feedbacks", element: <FE_Feedbacks /> },
   ],
 
-  feedbackManager: [
-    {path: "/complaints", element: <FM_Complaint/>}
-  ],
-  
 };
