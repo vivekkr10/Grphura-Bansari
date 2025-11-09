@@ -46,6 +46,9 @@ import ME_Help from "../pages/managementEmployee/Help"
 // managerManagement
 import MM_Dashboard from "../pages/managerManagement/Dashboard";
 import MM_ManagerReport from "../pages/managerManagement/managerReport";
+import MM_TeamReport from "../pages/managerManagement/Mgmtteamreport";
+import MM_ManagerSalary from "../pages/managerManagement/ManagerSalary";
+
 import MM_RecieveData from "../pages/managerManagement/RecieveData";
 import MM_Review from "../pages/managerManagement/Review";
 import MM_TotalProjects from "../pages/managerManagement/TotalProjects";
@@ -54,8 +57,8 @@ import MM_WorkingProject from "../pages/managerManagement/WorkingProject";
 
 // feedbackManager
 import FM_Dashboard from "../pages/feedbackManager/Dashboard";
-import FM_Feedbacks from "../pages/feedbackManager/Feedbacks";
-// import FM_Salary from "../pages/feedbackManager/Salary";
+import FM_Report from "../pages/feedbackManager/Fteamreport"
+
 
 // feedbackEmployee
 import FE_Dashboard from "../pages/feedBackEmployee/Dashboard";
@@ -117,6 +120,11 @@ export const roleBasedRoutes = {
   managerManagement: [
   { path: "/dashboard", element: <MM_Dashboard /> },
   { path: "/manager-report", element: <MM_ManagerReport /> },
+
+  // { path: "/team-member", element: <M_TeamMember /> },
+  // { path: "/review", element: <M_Review /> },
+    { path: "/report", element: <MM_TeamReport /> },
+    { path: "/salary", element: <MM_ManagerSalary /> },
   { path: "/recived-data", element: <MM_RecieveData /> },
   { path: "/review", element: <MM_Review /> },
   { path: "/total-projects", element: <MM_TotalProjects /> },
@@ -126,8 +134,8 @@ export const roleBasedRoutes = {
 
   feedbackManager: [
   { path: "/dashboard", element: <FM_Dashboard /> },
-  { path: "/feedbacks", element: <FM_Feedbacks /> },
-  // { path: "/salary", element: <FM_Salary /> },
+  { path: "/salary", element: <FE_Salary /> },
+  { path: "/report", element: <FM_Report /> },
   ],
 
   feedbackEmployee: [
