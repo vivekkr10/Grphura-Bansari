@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../../style/Manager(Management)/TeamMember.css'
+import '../../style/ManagerManagement/TeamMember.css'
 
 function TeamMember() {
    const [viewModal, setViewModal] = useState(false);

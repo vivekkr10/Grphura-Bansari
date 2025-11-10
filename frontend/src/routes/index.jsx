@@ -50,18 +50,21 @@ import MM_Review from "../pages/managerManagement/Review";
 import MM_TotalProjects from "../pages/managerManagement/TotalProjects";
 import MM_TransferDataFDBK from "../pages/managerManagement/TransferDataFDBK";
 import MM_WorkingProject from "../pages/managerManagement/WorkingProject";
+import MM_TeamMember from "../pages/managerManagement/TeamMember"
+import MM_TeamReport from "../pages/managerManagement/TeamReport"
+import MM_Salary from "../pages/managerManagement/ManagerSalary"
 
 // feedbackManager
 import FM_Dashboard from "../pages/feedbackManager/Dashboard";
 import FM_Feedbacks from "../pages/feedbackManager/Feedbacks";
-import FM_Complaint from "../pages/feedbackManager/complaints";
+import FM_Complaint from "../pages/feedbackManager/Complaints";
+import FM_TeamReport from "../pages/feedbackManager/TeamReport";
+import FM_Salary from "../pages/feedbackManager/FeedbackSalary"
 
 // feedbackEmployee
 import FE_Dashboard from "../pages/feedBackEmployee/Dashboard";
 import FE_Salary from "../pages/feedBackEmployee/Salary";
 import FE_Feedbacks from "../pages/feedBackEmployee/Feedbacks";
-
-//feedbackManager
 
 export const roleBasedRoutes = {
   salesExecutive: [
@@ -114,18 +117,23 @@ export const roleBasedRoutes = {
 
   managerManagement: [
     { path: "/dashboard", element: <MM_Dashboard /> },
-    { path: "/manager-report", element: <MM_ManagerReport /> },
-    { path: "/recived-data", element: <MM_RecieveData /> },
-    { path: "/review", element: <MM_Review /> },
     { path: "/total-projects", element: <MM_TotalProjects /> },
-    { path: "/transfer-data-to-feedback", element: <MM_TransferDataFDBK /> },
     { path: "/working-projects", element: <MM_WorkingProject /> },
+    { path: "/team-members", element: <MM_TeamMember /> },
+    { path: "/manager-report", element: <MM_ManagerReport /> },
+    { path: "/team-report", element: <MM_TeamReport /> },
+    { path: "/recived-data", element: <MM_RecieveData /> },
+    { path: "/transfer-data-to-feedback", element: <MM_TransferDataFDBK /> },
+    { path: "/review", element: <MM_Review /> },
+    { path: "/salary", element: <MM_Salary /> },
   ],
 
   feedbackManager: [
     { path: "/dashboard", element: <FM_Dashboard /> },
     { path: "/feedbacks", element: <FM_Feedbacks /> },
     { path: "/complaints", element: <FM_Complaint /> },
+    { path: "/team-report", element: <FM_TeamReport /> },
+    { path: "/salary", element: <FM_Salary /> },
   ],
 
   feedbackEmployee: [

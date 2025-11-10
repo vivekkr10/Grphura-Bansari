@@ -26,16 +26,20 @@ const Sidebar = () => {
       {/* === Sidebar === */}
       <aside className={`sidebar ${isOpen ? "open" : ""}`}>
         <div id="sidebar-container">
-      <div id="menu-toggle" className={isOpen ? "open" : ""} onClick={toggleSidebar}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-          <div id="sidebar-header" style={{backgroundColor:"#3158c9"}}>
+          <div
+            id="menu-toggle"
+            className={isOpen ? "open" : ""}
+            onClick={toggleSidebar}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div id="sidebar-header" style={{ backgroundColor: "#3158c9" }}>
             <img src={logo} alt="Graphura Logo" id="logo-img" />
           </div>
 
-          <div id="profile-section" style={{backgroundColor:"#3d68e7"}}>
+          <div id="profile-section" style={{ backgroundColor: "#3d68e7" }}>
             <img src={profile} alt="Profile Icon" id="profile-img" />
             <div id="profile-details">
               <h1 id="profile-name">Name</h1>
@@ -43,7 +47,7 @@ const Sidebar = () => {
             </div>
           </div>
 
-          <ul id="nav-menu" style={{backgroundColor:"#3d68e7"}}>
+          <ul id="nav-menu" style={{ backgroundColor: "#3d68e7" }}>
             <li className="nav-item">
               <img src={dashboard} alt="Dashboard Icon" id="nav-icon" />
               <NavLink to="/dashboard">Dashboard</NavLink>
@@ -76,7 +80,7 @@ const Sidebar = () => {
 
             <li className="nav-item">
               <img src={teamReport} alt="Sales Report Icon" id="nav-icon" />
-              <NavLink to="/transfer-data">Team Report</NavLink>
+              <NavLink to="/team-report">Team Report</NavLink>
               <hr className="nav-separator" />
             </li>
 
@@ -87,8 +91,14 @@ const Sidebar = () => {
             </li>
 
             <li className="nav-item">
-              <img src={transferDataFDBK} alt="Sales Report Icon" id="nav-icon" />
-              <NavLink to="/transfer-data-to-feedback">Transfer Data to FDBK.</NavLink>
+              <img
+                src={transferDataFDBK}
+                alt="Sales Report Icon"
+                id="nav-icon"
+              />
+              <NavLink to="/transfer-data-to-feedback">
+                Transfer Data to FDBK.
+              </NavLink>
               <hr className="nav-separator" />
             </li>
 
@@ -97,7 +107,7 @@ const Sidebar = () => {
               <NavLink to="/review">Review</NavLink>
               <hr className="nav-separator" />
             </li>
-            
+
             <li className="nav-item">
               <img src={salary} alt="Sales Report Icon" id="nav-icon" />
               <NavLink to="/salary">Salary</NavLink>

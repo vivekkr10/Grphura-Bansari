@@ -4,7 +4,7 @@ import "../../style/managementEmployee/CompleteProjects.css";
 function CompleteProjects() {
   return (
     <>
-      <main id="">
+      <main id="completeProject-main">
         <div id="main-content">
           <p>Completed Projects</p>
           <div id="table-content">

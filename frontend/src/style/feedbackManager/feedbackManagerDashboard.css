@@ -40,10 +40,10 @@
   width: 100%;
 }
 
-#dashboard-data {
+#manager-dashboard-data {
   display: flex;
   flex-direction: column;
-  padding: 0;
+  padding: 0px;
   width: 100%;
 }
 
@@ -141,5 +141,31 @@
   #data {
     flex: 1 1 45%;
     max-width: 45%;
+  }
+}
+
+/* For mobile screens (1 box per row) */
+@media (max-width: 600px) {
+  #dashboard-data {
+    padding: 20px;
+  }
+
+  #data {
+    flex: 1 1 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #num-vector p {
+    font-size: 28px;
+  }
+
+  #num-vector img {
+    width: 40px;
+    height: 42px;
+  }
+
+  #dashboard-data h1 {
+    font-size: 20px;
   }
 }
