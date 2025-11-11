@@ -28,8 +28,11 @@ import FeedbackManagerHeader from "./components/feedbackmanager/Header";
 import FeedbackEmployeeSidebar from "./components/feedbackEmployee/Sidebar"
 import FeedbackEmployeeHeader from "./components/feedbackEmployee/Header"
 
+import FinanceSidebar from "./components/finance/Sidebar"
+import FinanceHeader from "./components/finance/Header"
+
 function App() {
-  const role = localStorage.getItem("role") || "feedbackManager"; // Example fallback
+  const role = localStorage.getItem("role") || "finance"; // Example fallback
   const currentRoutes = roleBasedRoutes[role] || [];
 
   // Choose header and sidebar dynamically
@@ -173,6 +176,25 @@ function App() {
             <FeedbackEmployeeSidebar />
             <div>
               <FeedbackEmployeeHeader />
+              <Routes>
+                {currentRoutes.map((route, index) => (
+                  <Route
+                    key={index}
+                    path={route.path}
+                    element={route.element}
+                  />
+                ))}
+              </Routes>
+            </div>
+          </>
+        );
+      
+      case "finance":
+        return (
+          <>
+            <FinanceSidebar />
+            <div>
+              <FinanceHeader />
               <Routes>
                 {currentRoutes.map((route, index) => (
                   <Route
