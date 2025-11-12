@@ -45,14 +45,14 @@ const Sidebar = () => {
             </li>
 
             <li className="nav-item">
-              <img src={complaints} alt="Prospect Icon" id="nav-icon" />
-              <NavLink to="/complaints">Complaints</NavLink>
+              <img src={feedbacks} alt="User Data Icon" id="nav-icon" />
+              <NavLink to="/feedbacks">Feedbacks</NavLink>
               <hr className="nav-separator" />
             </li>
 
             <li className="nav-item">
-              <img src={feedbacks} alt="User Data Icon" id="nav-icon" />
-              <NavLink to="/feedbacks">Feedbacks</NavLink>
+              <img src={complaints} alt="Prospect Icon" id="nav-icon" />
+              <NavLink to="/complaints">Complaints</NavLink>
               <hr className="nav-separator" />
             </li>
             

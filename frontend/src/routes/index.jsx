@@ -50,21 +50,25 @@ import MM_Review from "../pages/managerManagement/Review";
 import MM_TotalProjects from "../pages/managerManagement/TotalProjects";
 import MM_TransferDataFDBK from "../pages/managerManagement/TransferDataFDBK";
 import MM_WorkingProject from "../pages/managerManagement/WorkingProject";
-import MM_TeamMember from "../pages/managerManagement/TeamMember"
-import MM_TeamReport from "../pages/managerManagement/TeamReport"
-import MM_Salary from "../pages/managerManagement/ManagerSalary"
+import MM_TeamMember from "../pages/managerManagement/TeamMember";
+import MM_TeamReport from "../pages/managerManagement/TeamReport";
+import MM_Salary from "../pages/managerManagement/ManagerSalary";
 
 // feedbackManager
 import FM_Dashboard from "../pages/feedbackManager/Dashboard";
 import FM_Feedbacks from "../pages/feedbackManager/Feedbacks";
 import FM_Complaint from "../pages/feedbackManager/Complaints";
 import FM_TeamReport from "../pages/feedbackManager/TeamReport";
-import FM_Salary from "../pages/feedbackManager/FeedbackSalary"
+import FM_Salary from "../pages/feedbackManager/FeedbackSalary";
 
 // feedbackEmployee
 import FE_Dashboard from "../pages/feedBackEmployee/Dashboard";
-import FE_Salary from "../pages/feedBackEmployee/Salary";
 import FE_Feedbacks from "../pages/feedBackEmployee/Feedbacks";
+import FE_Complaints from "../pages/feedbackEmployee/Complaints";
+import FE_Salary from "../pages/feedBackEmployee/Salary";
+
+// finance
+import F_Dashboard from "../pages/finance/Dashboard";
 
 export const roleBasedRoutes = {
   salesExecutive: [
@@ -138,7 +142,9 @@ export const roleBasedRoutes = {
 
   feedbackEmployee: [
     { path: "/dashboard", element: <FE_Dashboard /> },
-    { path: "/salary", element: <FE_Salary /> },
     { path: "/feedbacks", element: <FE_Feedbacks /> },
+    { path: "/complaints", element: <FE_Complaints /> },
+    { path: "/salary", element: <FE_Salary /> },
   ],
+  finance: [{ path: "/dashboard", element: <F_Dashboard /> }],
 };

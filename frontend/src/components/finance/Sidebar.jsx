@@ -8,7 +8,6 @@ import addEmployeePayout from "../../assets/finance/sidebar/addEmployeePayout.pn
 import clientMgmt from "../../assets/finance/sidebar/clientMgmt.png";
 import employeeMgmt from "../../assets/finance/sidebar/employeeMgmt.png";
 import report from "../../assets/finance/sidebar/report.png";
-
 import "../salesManager/sidebar.css";
 import { NavLink } from "react-router-dom";
 
