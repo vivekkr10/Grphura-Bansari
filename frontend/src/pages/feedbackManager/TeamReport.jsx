@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import "../../style/feedbackManager/fteamreport.css"
 
-function Fteamreport(){
+function TeamReport(){
     // const [day, setDay] = useState("");
   // const [teamLeader, setTeamLeader] = useState("");
 
@@ -91,4 +91,4 @@ function Fteamreport(){
 }
 
 
-export default Fteamreport
+export default TeamReport

@@ -1,3 +1,4 @@
+
 import React from 'react'
 import "../../style/feedbackManager/feedbacksalar.css"
 
@@ -57,4 +58,4 @@ function FeedbackSalary() {
   )
 }
 
-export default FeedbackSalary
+export default FeedbackSalary;

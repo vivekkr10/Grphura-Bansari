@@ -1,13 +1,15 @@
 import React, { useState } from "react";
-import logo from "../../assets/feedbackManager/sidebar/logo.png";
-import profile from "../../assets/feedbackManager/sidebar/profile.png";
-import dashboard from "../../assets/feedbackManager/sidebar/dashboard.png";
-import teamMamber from "../../assets/feedbackManager/sidebar/teamMember.png";
-import teamReport from "../../assets/feedbackManager/sidebar/teamReport.png";
-import feedback from "../../assets/feedbackManager/sidebar/feedback.png";
-import complaints from "../../assets/feedbackManager/sidebar/complaints.png";
-import salary from "../../assets/feedbackManager/sidebar/salary.png";
-import "../feedbackManager/sidebar.css";
+import logo from "../../assets/managementEmployee/sidebar/logo.png";
+import profile from "../../assets/managementEmployee/sidebar/profile.png";
+import dashboard from "../../assets/finance/sidebar/dashboard.png";
+import invoice from "../../assets/finance/sidebar/invoice.png";
+import payout from "../../assets/finance/sidebar/payout.png";
+import addEmployeePayout from "../../assets/finance/sidebar/addEmployeePayout.png";
+import clientMgmt from "../../assets/finance/sidebar/clientMgmt.png";
+import employeeMgmt from "../../assets/finance/sidebar/employeeMgmt.png";
+import report from "../../assets/finance/sidebar/report.png";
+
+import "../salesManager/sidebar.css";
 import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
@@ -35,7 +37,7 @@ const Sidebar = () => {
             <img src={profile} alt="Profile Icon" id="profile-img" />
             <div id="profile-details">
               <h1 id="profile-name">Name</h1>
-              <p id="profile-title">Feedback / Manager</p>
+              <p id="profile-title">Finance</p>
             </div>
           </div>
 
@@ -45,34 +47,34 @@ const Sidebar = () => {
               <NavLink to="/dashboard">Dashboard</NavLink>
               <hr className="nav-separator" />
             </li>
-
             <li className="nav-item">
-              <img src={feedback} alt="User Data Icon" id="nav-icon" />
-              <NavLink to="/feedbacks">Feedbacks</NavLink>
+              <img src={invoice} alt="Sales Report Icon" id="nav-icon" />
+              <NavLink to="/invoice">Invoice</NavLink>
               <hr className="nav-separator" />
             </li>
-
             <li className="nav-item">
-              <img src={complaints} alt="Prospect Icon" id="nav-icon" />
-              <NavLink to="/complaints">Complaints</NavLink>
+              <img src={clientMgmt} alt="Sales Report Icon" id="nav-icon" />
+              <NavLink to="/client-management">Client Management</NavLink>
               <hr className="nav-separator" />
             </li>
-
             <li className="nav-item">
-              <img src={teamMamber} alt="Report Icon" id="nav-icon" />
-              <NavLink to="/team-members">Team Members</NavLink>
+              <img src={employeeMgmt} alt="Sales Report Icon" id="nav-icon" />
+              <NavLink to="/employee-management">Employee Management</NavLink>
               <hr className="nav-separator" />
             </li>
-
             <li className="nav-item">
-              <img src={teamReport} alt="Sales Report Icon" id="nav-icon" />
-              <NavLink to="/team-report">Team Report</NavLink>
+              <img src={addEmployeePayout} alt="Sales Report Icon" id="nav-icon" />
+              <NavLink to="/add-employee-payout">Add Employee Payout</NavLink>
               <hr className="nav-separator" />
             </li>
-            
             <li className="nav-item">
-              <img src={salary} alt="Sales Report Icon" id="nav-icon" />
-              <NavLink to="/salary">Salary</NavLink>
+              <img src={payout} alt="Sales Report Icon" id="nav-icon" />
+              <NavLink to="/payout">Payout</NavLink>
+              <hr className="nav-separator" />
+            </li>
+            <li className="nav-item">
+              <img src={report} alt="Sales Report Icon" id="nav-icon" />
+              <NavLink to="/reports">Reports</NavLink>
               <hr className="nav-separator" />
             </li>
           </ul>

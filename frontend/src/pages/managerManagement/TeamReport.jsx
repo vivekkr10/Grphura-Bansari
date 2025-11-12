@@ -1,10 +1,10 @@
 import React, { useState }  from 'react'
 import "../../style/managerManagement/Mgmtteamreport.css"
-import { FaDownload } from "react-icons/fa";
+// import { FaDownload } from "react-icons/fa";
 import download from "../../assets/managerManagement/managerteamreport/Download.png"
 
 
-function Mgmtteamreport() {
+function TeamReport() {
 
   const managerdata = [
     ...Array(6).fill({
@@ -117,4 +117,4 @@ function Mgmtteamreport() {
   );
 }
 
-export default Mgmtteamreport
+export default TeamReport

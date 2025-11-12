@@ -19,33 +19,33 @@ const ManagerReport = () => {
       <div id="dashboard">
         <div id="dashboard-container">
           <section id="dashboard-data">
-            <h1>Dashboard</h1>
+            <h1>Manager Report</h1>
             <div id="data-wrap">
               <div id="data">
                 <h3>TOTAL PROJECTS</h3>
                 <div id="num-vector">
-                  <p>10</p>
+                  <p>300</p>
                   <img src={totalProjects} alt="" />
                 </div>
               </div>
               <div id="data">
                 <h3>COMPLETED PROJECTS</h3>
                 <div id="num-vector">
-                  <p>5</p>
+                  <p>7</p>
                   <img src={completedProjects} alt="" />
                 </div>
               </div>
               <div id="data">
                 <h3>PENDING PROJECTS</h3>
                 <div id="num-vector">
-                  <p>4</p>
+                  <p>8000</p>
                   <img src={pendingProjects} alt="" />
                 </div>
               </div>
               <div id="data">
                 <h3>LAST MONTH PAYOUT</h3>
                 <div id="num-vector">
-                  <p>3</p>
+                  <p>16</p>
                   <img src={payout} alt="" />
                 </div>
               </div>
@@ -54,7 +54,7 @@ const ManagerReport = () => {
           <section id="hot-clients">
             <div id="container">
               <div id="clients">
-                <h1>Hot Clients</h1>
+                <h1>My Projects</h1>
                 <div id="client-list">
                   <table>
                     <thead>

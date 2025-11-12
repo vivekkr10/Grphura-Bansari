@@ -130,7 +130,7 @@ const TotalSales = () => {
         <div
           className="table-responsive shadow-lg p-4 bg-white rounded"
           style={{
-            width: "98%",
+            width: "100%",
             maxWidth: "1200px",
             padding: "0px 20px",
             maxHeight: "300px", // 👈 fixed height for 5 rows
@@ -138,7 +138,6 @@ const TotalSales = () => {
             overflowX: "auto",
             overflowY: "hidden",
             whiteSpace: "nowrap",
-            marginRight: "6.5%",
           }}
         >
           <table

@@ -1,41 +1,34 @@
-import React from 'react'
-import "../../style/feedbackManager/feedbackManagerDashboard.css"
-import ManagerDashboardChart from './ManagerDashboardChart'
+import React from "react";
+import "../../style/feedbackManager/feedbackManagerDashboard.css";
+import ManagerDashboardChart from "./ManagerDashboardChart";
 
 // Assets
-  import totalData from "../../assets/feedbackManager/dashboard/totalData.png"
-  import TOTALFEEDBACKs from"../../assets/feedbackManager/dashboard/totalFeedback.svg"
-  import TOTALCOMPLAINTS from"../../assets/feedbackManager/dashboard/TOTALCOMPLAINTS.svg"
-  import REMAININGFEEDBACKS from "../../assets/feedbackManager/dashboard/REMAININGFEEDBACKS.png"
-  import UNSOLVEDCOMPLAINTS from "../../assets/feedbackManager/dashboard/UNSOLVEDCOMPLAINTS.png"
-  import TOTALTEAM from "../../assets/feedbackManager/dashboard/TOTALTEAM.png"
-  import TOTALINCOME from "../../assets/feedbackManager/dashboard/TOTALINCOME.png"
-
-
-
+import totalData from "../../assets/feedbackManager/dashboard/totalData.png";
+import TOTALFEEDBACKs from "../../assets/feedbackManager/dashboard/totalFeedback.svg";
+import TOTALCOMPLAINTS from "../../assets/feedbackManager/dashboard/TOTALCOMPLAINTS.svg";
+import REMAININGFEEDBACKS from "../../assets/feedbackManager/dashboard/REMAININGFEEDBACKS.png";
+import UNSOLVEDCOMPLAINTS from "../../assets/feedbackManager/dashboard/UNSOLVEDCOMPLAINTS.png";
+import TOTALTEAM from "../../assets/feedbackManager/dashboard/TOTALTEAM.png";
+import TOTALINCOME from "../../assets/feedbackManager/dashboard/TOTALINCOME.png";
 
 function Dashboard() {
   return (
     <>
-        <div className='feedbackManagerDashboardMainContainer'>
+      <div className="feedbackManagerDashboardMainContainer">
         <h1>Dashboard</h1>
-        <div className='grid'>
-
-        <div className='left'>
-          <ManagerDashboardChart />
+        <div className="grid">
+          <div className="left">
+            <ManagerDashboardChart />
           </div>
 
-          <div className='right'>
-            <h3 className='complaints'>Hot complaints </h3>
+          <div className="right">
+            <h3 className="complaints">Hot complaints </h3>
           </div>
-          
-
         </div>
 
-        <div className='bottom'> 
-        {/* <h1>Complaints</h1> */}
-            <section id="dashboard-data">
-          
+        <div className="bottom">
+          {/* <h1>Complaints</h1> */}
+          <section id="manager-dashboard-data">
             <div id="data-wrap">
               <div id="data">
                 <h3>TOTAL DATA</h3>
@@ -99,17 +92,11 @@ function Dashboard() {
             </div>
           </section>
 
-               <section id="dashboard-data">
-        
-            
-          </section>
-
+          <section id="dashboard-data"></section>
         </div>
-
-        </div>
-    
+      </div>
     </>
-  )
+  );
 }
 
 export default Dashboard;
