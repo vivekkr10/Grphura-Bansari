@@ -10,6 +10,7 @@ import SE_UserData from "../pages/salesExecutive/UserData";
 // salesTeamLead
 import TL_Dashboard from "../pages/salesTeamLead/Dashboard";
 import TL_TransferData from "../pages/salesTeamLead/TransferData";
+import TL_TotalSales from "../pages/salesTeamLead/TotalSales";
 import TL_UntouchedData from "../pages/salesTeamLead/UntouchedData";
 import TL_TeamMember from "../pages/salesTeamLead/TeamMember";
 import TL_ProspectForm from "../pages/salesTeamLead/ProspectForm";
@@ -70,6 +71,10 @@ import FE_Salary from "../pages/feedBackEmployee/Salary";
 // finance
 import F_Dashboard from "../pages/finance/Dashboard";
 
+// accountant
+import A_Dashboard from "../pages/accountant/Dashboard";
+import A_Invoice from "../pages/accountant/Invoice";
+
 export const roleBasedRoutes = {
   salesExecutive: [
     { path: "/dashboard", element: <SE_Dashboard /> },
@@ -83,6 +88,7 @@ export const roleBasedRoutes = {
   salesTeamLead: [
     { path: "/dashboard", element: <TL_Dashboard /> },
     { path: "/transfer-data", element: <TL_TransferData /> },
+    { path: "/total-sales", element: <TL_TotalSales /> },
     { path: "/untouched-data", element: <TL_UntouchedData /> },
     { path: "/prospect", element: <TL_Prospect /> },
     { path: "/team-member", element: <TL_TeamMember /> },
@@ -147,4 +153,9 @@ export const roleBasedRoutes = {
     { path: "/salary", element: <FE_Salary /> },
   ],
   finance: [{ path: "/dashboard", element: <F_Dashboard /> }],
+
+  accountant: [
+    { path: "/dashboard", element: <A_Dashboard /> },
+    { path: "/invoice", element: <A_Invoice /> },
+  ],
 };
