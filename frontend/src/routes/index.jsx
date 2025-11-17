@@ -73,7 +73,9 @@ import F_Dashboard from "../pages/finance/Dashboard";
 
 // accountant
 import A_Dashboard from "../pages/accountant/Dashboard";
+import A_ClientManagement from "../pages/accountant/ClientManagement";
 import A_Invoice from "../pages/accountant/Invoice";
+import A_PreviousClients from "../pages/accountant/PreviousClients"
 
 export const roleBasedRoutes = {
   salesExecutive: [
@@ -156,6 +158,8 @@ export const roleBasedRoutes = {
 
   accountant: [
     { path: "/dashboard", element: <A_Dashboard /> },
+    { path: "/client-management", element: <A_ClientManagement /> },
     { path: "/invoice", element: <A_Invoice /> },
+    { path: "/previous-clients", element: <A_PreviousClients /> },
   ],
 };
