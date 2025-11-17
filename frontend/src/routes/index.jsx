@@ -71,6 +71,8 @@ import FE_Salary from "../pages/feedBackEmployee/Salary";
 // finance
 import F_Dashboard from "../pages/finance/Dashboard";
 import F_Employeemanagement from "../pages/finance/Employeemanagement";
+import F_ClientManagement from "../pages/finance/clientManagement";
+import F_InvoiceUI from "../pages/finance/FinanceInvoice";
 
 // accountant
 import A_Dashboard from "../pages/accountant/Dashboard";
@@ -158,6 +160,8 @@ export const roleBasedRoutes = {
   finance: [
     { path: "/dashboard", element: <F_Dashboard /> },
     { path: "/employee-management", element: <F_Employeemanagement /> },
+    { path: "/client-management", element: <F_ClientManagement /> },
+    { path: "/invoice", element: <F_InvoiceUI /> },
   ],
 
   accountant: [
