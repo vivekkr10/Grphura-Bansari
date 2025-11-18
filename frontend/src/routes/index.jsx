@@ -27,6 +27,7 @@ import SM_ProspectForm from "../pages/salesManager/ProspectForm";
 import SM_TeamMember from "../pages/salesManager/TeamMember";
 import SM_TeamReport from "../pages/salesManager/Report";
 import SM_TransferData from "../pages/salesManager/Transferdata";
+import SM_TransferDataToFin from "../pages/salesManager/TransferDataToFin";
 
 // managementTL
 import M_Dashboard from "../pages/managementTL/Dashboard";
@@ -73,6 +74,10 @@ import F_Dashboard from "../pages/finance/Dashboard";
 import F_Employeemanagement from "../pages/finance/Employeemanagement";
 import F_ClientManagement from "../pages/finance/clientManagement";
 import F_InvoiceUI from "../pages/finance/FinanceInvoice";
+import F_TransferDataToAccountant from "../pages/finance/TransferDataToAccountant";
+import F_AddEmployeePayout from "../pages/finance/AddEmployeePayout";
+import F_Reports from "../pages/finance/Reports";
+import F_Payout from "../pages/finance/Payout";
 
 // accountant
 import A_Dashboard from "../pages/accountant/Dashboard";
@@ -109,6 +114,7 @@ export const roleBasedRoutes = {
     { path: "/untouched-data", element: <SM_UntouchedData /> },
     { path: "/prospect-form", element: <SM_ProspectForm /> },
     { path: "/team-member", element: <SM_TeamMember /> },
+    { path: "/transfer-data-fin", element: <SM_TransferDataToFin /> },
     { path: "/report", element: <SM_TeamReport /> },
     { path: "/transfer-data", element: <SM_TransferData /> },
   ],
@@ -160,8 +166,12 @@ export const roleBasedRoutes = {
   finance: [
     { path: "/dashboard", element: <F_Dashboard /> },
     { path: "/employee-management", element: <F_Employeemanagement /> },
+    { path: "/add-employee-payout", element: <F_AddEmployeePayout /> },
     { path: "/client-management", element: <F_ClientManagement /> },
     { path: "/invoice", element: <F_InvoiceUI /> },
+    { path: "/transfer-data-to-accountant", element: <F_TransferDataToAccountant /> },
+    { path: "/reports", element: <F_Reports /> },
+    { path: "/payout", element: <F_Payout /> },
   ],
 
   accountant: [
