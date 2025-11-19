@@ -53,8 +53,8 @@ const Dashboard = () => {
             <div id="container">
               <div id="clients">
                 <h1>Hot Clients</h1>
-                <div id="client-list">
-                  <table>
+                <div id="client-list" style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
+                  <table id="se-table">
                     <thead>
                       <th> </th>
                       <th>Company Name</th>

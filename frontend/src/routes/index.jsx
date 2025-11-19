@@ -10,6 +10,7 @@ import SE_UserData from "../pages/salesExecutive/UserData";
 // salesTeamLead
 import TL_Dashboard from "../pages/salesTeamLead/Dashboard";
 import TL_TransferData from "../pages/salesTeamLead/TransferData";
+import TL_TotalSales from "../pages/salesTeamLead/TotalSales";
 import TL_UntouchedData from "../pages/salesTeamLead/UntouchedData";
 import TL_TeamMember from "../pages/salesTeamLead/TeamMember";
 import TL_ProspectForm from "../pages/salesTeamLead/ProspectForm";
@@ -26,6 +27,7 @@ import SM_ProspectForm from "../pages/salesManager/ProspectForm";
 import SM_TeamMember from "../pages/salesManager/TeamMember";
 import SM_TeamReport from "../pages/salesManager/Report";
 import SM_TransferData from "../pages/salesManager/Transferdata";
+import SM_TransferDataToFin from "../pages/salesManager/TransferDataToFin";
 
 // managementTL
 import M_Dashboard from "../pages/managementTL/Dashboard";
@@ -50,9 +52,9 @@ import MM_Review from "../pages/managerManagement/Review";
 import MM_TotalProjects from "../pages/managerManagement/TotalProjects";
 import MM_TransferDataFDBK from "../pages/managerManagement/TransferDataFDBK";
 import MM_WorkingProject from "../pages/managerManagement/WorkingProject";
-import MM_TeamMember from "../pages/managerManagement/TeamMember"
-import MM_TeamReport from "../pages/managerManagement/TeamReport"
-import MM_Salary from "../pages/managerManagement/ManagerSalary"
+import MM_TeamMember from "../pages/managerManagement/TeamMember";
+import MM_TeamReport from "../pages/managerManagement/TeamReport";
+import MM_Salary from "../pages/managerManagement/ManagerSalary";
 
 // feedbackManager
 import FM_Dashboard from "../pages/feedbackManager/Dashboard";
@@ -60,11 +62,29 @@ import FM_Feedbacks from "../pages/feedbackManager/Feedbacks";
 import FM_Salary from "../pages/feedbackManager/FeedbackSalary";
 import FM_Complaint from "../pages/feedbackManager/Complaints";
 import FM_TeamReport from "../pages/feedbackManager/TeamReport";
+import FM_Salary from "../pages/feedbackManager/FeedbackSalary";
 
 // feedbackEmployee
 import FE_Dashboard from "../pages/feedBackEmployee/Dashboard";
-import FE_Salary from "../pages/feedBackEmployee/Salary";
 import FE_Feedbacks from "../pages/feedBackEmployee/Feedbacks";
+import FE_Complaints from "../pages/feedbackEmployee/Complaints";
+import FE_Salary from "../pages/feedBackEmployee/Salary";
+
+// finance
+import F_Dashboard from "../pages/finance/Dashboard";
+import F_Employeemanagement from "../pages/finance/Employeemanagement";
+import F_ClientManagement from "../pages/finance/clientManagement";
+import F_InvoiceUI from "../pages/finance/FinanceInvoice";
+import F_TransferDataToAccountant from "../pages/finance/TransferDataToAccountant";
+import F_AddEmployeePayout from "../pages/finance/AddEmployeePayout";
+import F_Reports from "../pages/finance/Reports";
+import F_Payout from "../pages/finance/Payout";
+
+// accountant
+import A_Dashboard from "../pages/accountant/Dashboard";
+import A_ClientManagement from "../pages/accountant/ClientManagement";
+import A_Invoice from "../pages/accountant/Invoice";
+import A_PreviousClients from "../pages/accountant/PreviousClients"
 
 export const roleBasedRoutes = {
   salesExecutive: [
@@ -79,6 +99,7 @@ export const roleBasedRoutes = {
   salesTeamLead: [
     { path: "/dashboard", element: <TL_Dashboard /> },
     { path: "/transfer-data", element: <TL_TransferData /> },
+    { path: "/total-sales", element: <TL_TotalSales /> },
     { path: "/untouched-data", element: <TL_UntouchedData /> },
     { path: "/prospect", element: <TL_Prospect /> },
     { path: "/team-member", element: <TL_TeamMember /> },
@@ -94,6 +115,7 @@ export const roleBasedRoutes = {
     { path: "/untouched-data", element: <SM_UntouchedData /> },
     { path: "/prospect-form", element: <SM_ProspectForm /> },
     { path: "/team-member", element: <SM_TeamMember /> },
+    { path: "/transfer-data-fin", element: <SM_TransferDataToFin /> },
     { path: "/report", element: <SM_TeamReport /> },
     { path: "/transfer-data", element: <SM_TransferData /> },
   ],
@@ -140,8 +162,26 @@ export const roleBasedRoutes = {
 
   feedbackEmployee: [
     { path: "/dashboard", element: <FE_Dashboard /> },
-    { path: "/salary", element: <FE_Salary /> },
     { path: "/feedbacks", element: <FE_Feedbacks /> },
+    { path: "/complaints", element: <FE_Complaints /> },
+    { path: "/salary", element: <FE_Salary /> },
+  ],
+  finance: [
+    { path: "/dashboard", element: <F_Dashboard /> },
+    { path: "/employee-management", element: <F_Employeemanagement /> },
+    { path: "/add-employee-payout", element: <F_AddEmployeePayout /> },
+    { path: "/client-management", element: <F_ClientManagement /> },
+    { path: "/invoice", element: <F_InvoiceUI /> },
+    { path: "/transfer-data-to-accountant", element: <F_TransferDataToAccountant /> },
+    { path: "/reports", element: <F_Reports /> },
+    { path: "/payout", element: <F_Payout /> },
+  ],
+
+  accountant: [
+    { path: "/dashboard", element: <A_Dashboard /> },
+    { path: "/client-management", element: <A_ClientManagement /> },
+    { path: "/invoice", element: <A_Invoice /> },
+    { path: "/previous-clients", element: <A_PreviousClients /> },
   ],
 
 
