@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { X, CheckCircle, XCircle, Upload, Eye } from "lucide-react";
-import "@fontsource/jost"; // Defaults to weight 400
-import "@fontsource/jost/600.css"; // For bold
+import { CheckCircle, XCircle } from "lucide-react";
+
 const clients = [
   {
     id: 1,
@@ -59,7 +58,7 @@ const ClientManagement = () => {
   const [showTrackModal, setShowTrackModal] = useState(false);
   const [showCompanyModal, setShowCompanyModal] = useState(false);
   const [selectedTrack, setSelectedTrack] = useState(null);
-  const [setSelectedClient] = useState(null);
+  const [, setSelectedClient] = useState(null);
   const [selectedAccount, setSelectedAccount] = useState("");
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
@@ -326,7 +325,6 @@ const ClientManagement = () => {
                       }}
                     >
                       <button
-                        onClick={() => openCompanyModal(client)}
                         style={{
                           backgroundColor: "#3D68E7",
                           color: "white",
@@ -372,6 +370,7 @@ const ClientManagement = () => {
                     }}
                   >
                     <button
+                      onClick={() => openCompanyModal(client)}
                       style={{
                         backgroundColor: "#3D68E7",
                         color: "white",
@@ -491,9 +490,10 @@ const ClientManagement = () => {
             <div
               style={{
                 display: "flex",
-                alignItems: "center",
+                alignItems: "flex-start",
                 justifyContent: "space-between",
                 padding: "0 16px",
+                position: "relative",
               }}
             >
               {/* Step 1 */}
@@ -503,6 +503,8 @@ const ClientManagement = () => {
                   flexDirection: "column",
                   alignItems: "center",
                   flex: 1,
+                  position: "relative",
+                  zIndex: 1,
                 }}
               >
                 <CheckCircle
@@ -511,6 +513,7 @@ const ClientManagement = () => {
                     height: "64px",
                     color: "#11CE4D",
                     marginBottom: "8px",
+                    backgroundColor: "white",
                   }}
                   strokeWidth={2}
                 />
@@ -529,12 +532,16 @@ const ClientManagement = () => {
                 </small>
               </div>
 
+              {/* Connecting Line 1-2 */}
               <div
                 style={{
-                  flex: 1,
+                  position: "absolute",
+                  top: "32px",
+                  left: "calc(10% + 32px)",
+                  width: "calc(20% - 64px)",
                   height: "4px",
                   backgroundColor: "#11CE4D",
-                  margin: "0 8px",
+                  zIndex: 0,
                 }}
               ></div>
 
@@ -545,6 +552,8 @@ const ClientManagement = () => {
                   flexDirection: "column",
                   alignItems: "center",
                   flex: 1,
+                  position: "relative",
+                  zIndex: 1,
                 }}
               >
                 <CheckCircle
@@ -553,6 +562,7 @@ const ClientManagement = () => {
                     height: "64px",
                     color: "#11CE4D",
                     marginBottom: "8px",
+                    backgroundColor: "white",
                   }}
                   strokeWidth={2}
                 />
@@ -571,12 +581,16 @@ const ClientManagement = () => {
                 </small>
               </div>
 
+              {/* Connecting Line 2-3 */}
               <div
                 style={{
-                  flex: 1,
+                  position: "absolute",
+                  top: "32px",
+                  left: "calc(30% + 32px)",
+                  width: "calc(20% - 64px)",
                   height: "4px",
                   backgroundColor: "#11CE4D",
-                  margin: "0 8px",
+                  zIndex: 0,
                 }}
               ></div>
 
@@ -587,6 +601,8 @@ const ClientManagement = () => {
                   flexDirection: "column",
                   alignItems: "center",
                   flex: 1,
+                  position: "relative",
+                  zIndex: 1,
                 }}
               >
                 <CheckCircle
@@ -595,6 +611,7 @@ const ClientManagement = () => {
                     height: "64px",
                     color: "#11CE4D",
                     marginBottom: "8px",
+                    backgroundColor: "white",
                   }}
                   strokeWidth={2}
                 />
@@ -613,12 +630,16 @@ const ClientManagement = () => {
                 </small>
               </div>
 
+              {/* Connecting Line 3-4 */}
               <div
                 style={{
-                  flex: 1,
+                  position: "absolute",
+                  top: "32px",
+                  left: "calc(50% + 32px)",
+                  width: "calc(20% - 64px)",
                   height: "4px",
                   backgroundColor: "#11CE4D",
-                  margin: "0 8px",
+                  zIndex: 0,
                 }}
               ></div>
 
@@ -629,6 +650,8 @@ const ClientManagement = () => {
                   flexDirection: "column",
                   alignItems: "center",
                   flex: 1,
+                  position: "relative",
+                  zIndex: 1,
                 }}
               >
                 <CheckCircle
@@ -637,6 +660,7 @@ const ClientManagement = () => {
                     height: "64px",
                     color: "#11CE4D",
                     marginBottom: "8px",
+                    backgroundColor: "white",
                   }}
                   strokeWidth={2}
                 />
@@ -655,12 +679,16 @@ const ClientManagement = () => {
                 </small>
               </div>
 
+              {/* Connecting Line 4-5 */}
               <div
                 style={{
-                  flex: 1,
+                  position: "absolute",
+                  top: "32px",
+                  left: "calc(70% + 32px)",
+                  width: "calc(20% - 64px)",
                   height: "4px",
                   backgroundColor: "#D41A1A",
-                  margin: "0 8px",
+                  zIndex: 0,
                 }}
               ></div>
 
@@ -671,6 +699,8 @@ const ClientManagement = () => {
                   flexDirection: "column",
                   alignItems: "center",
                   flex: 1,
+                  position: "relative",
+                  zIndex: 1,
                 }}
               >
                 <XCircle
@@ -679,6 +709,7 @@ const ClientManagement = () => {
                     height: "64px",
                     color: "#D41A1A",
                     marginBottom: "8px",
+                    backgroundColor: "white",
                   }}
                   strokeWidth={2}
                 />
@@ -749,7 +780,7 @@ const ClientManagement = () => {
                   fontWeight: "500",
                   border: "none",
                   cursor: "pointer",
-                  height: "21",
+                  height: "21px",
                   width: "68px",
                 }}
               >
@@ -852,11 +883,11 @@ const ClientManagement = () => {
                     <th
                       style={{
                         padding: "16px 20px",
-                        textAlign: "left",
+                        textAlign: "center",
                         fontSize: "15px",
                         fontWeight: "600",
                         color: "#1f2937",
-                        backgroundColor: "#f3f4f6",
+                        backgroundColor: "#FCFCFD",
                         borderBottom: "1px solid #e5e7eb",
                         whiteSpace: "nowrap",
                       }}
@@ -866,12 +897,12 @@ const ClientManagement = () => {
                     <th
                       style={{
                         padding: "16px 20px",
-                        textAlign: "left",
+                        textAlign: "center",
                         fontSize: "15px",
                         fontWeight: "600",
                         color: "#1f2937",
-                        backgroundColor: "#f3f4f6",
-                        // borderBottom: "1px solid #e5e7eb",
+                        backgroundColor: "#FCFCFD",
+                        borderBottom: "1px solid #e5e7eb",
                         whiteSpace: "nowrap",
                       }}
                     >
@@ -972,7 +1003,7 @@ const ClientManagement = () => {
                   fontSize: "14px",
                   outline: "none",
                   cursor: "pointer",
-                  height: "52",
+                  height: "52px",
                   width: "353px",
                 }}
               >
@@ -991,7 +1022,7 @@ const ClientManagement = () => {
                   fontWeight: "500",
                   border: "none",
                   cursor: "pointer",
-                  height: "32",
+                  height: "32px",
                   width: "89px",
                 }}
               >
