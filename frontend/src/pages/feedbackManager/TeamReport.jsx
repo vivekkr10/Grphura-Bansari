@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import React from 'react'
-=======
-import React,{useState} from 'react'
->>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
 import "../../style/feedbackManager/fteamreport.css"
 
 function TeamReport(){

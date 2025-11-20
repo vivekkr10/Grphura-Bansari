@@ -105,11 +105,7 @@ function Prospect() {
         </div>
 
         <div className="tableContainer">
-<<<<<<< HEAD
-          <table style={{width:"100%"}}>
-=======
-          <table>
->>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
+          <table style={{ width: "100%" }}>
             <thead>
               <tr>
                 <th></th>
@@ -238,7 +234,6 @@ function Prospect() {
                   layouts into code.
                 </p>
               </div>
-<<<<<<< HEAD
               <div className="update-row">
                 <p className="date">25/06/2025 07:04 PM</p>
                 <p className="desc">
@@ -247,8 +242,6 @@ function Prospect() {
                   layouts into code.
                 </p>
               </div>
-=======
->>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
             </div>
           </div>
         </div>

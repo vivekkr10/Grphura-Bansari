@@ -3,10 +3,6 @@ import "../../style/salesManager/SalesManagerTeamMember.css";
 
 function TeamMember() {
   const [viewModal, setViewModal] = useState(false);
-<<<<<<< HEAD
-=======
-  
->>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
 
   const teamMemberData = [
     {
@@ -59,21 +55,18 @@ function TeamMember() {
         <h1 className="TeamMemberContainerHeading">Team Member</h1>
 
         <section className="tableContainer">
-<<<<<<< HEAD
-          <table style={{width:"100%"}}>
-=======
-          <table>
->>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
+          <table style={{ width: "100%" }}>
             <thead>
               <tr>
                 <th>Name</th>
                 <th>Location</th>
                 <th>Email ID</th>
                 <th>Contact No.</th>
-                <th>Joinning Date</th>
+                <th>Joining Date</th>
                 <th>More</th>
               </tr>
             </thead>
+
             {teamMemberData.map((member, index) => (
               <tbody key={index}>
                 <tr>
@@ -170,6 +163,7 @@ function TeamMember() {
                 />
               </div>
             </div>
+
             <div className="form-actions">
               <button type="submit" className="add-button">
                 ADD
@@ -178,48 +172,53 @@ function TeamMember() {
           </form>
         </section>
 
-<<<<<<< HEAD
+        {/* ------------------ VIEW MODAL ------------------ */}
         {viewModal && (
           <div id="popupoverlay" onClick={() => setViewModal(false)}>
             <div id="popupbox" onClick={(e) => e.stopPropagation()}>
               <div id="popupheader">
                 <h3 id="popuptitle">User Name</h3>
               </div>
+
               <div id="popupbody">
                 <div className="modal-content-wrapper">
                   {/* Left Side - Bank Details */}
                   <div className="bank-details-section">
                     <h3 className="section-title">Bank Details</h3>
+
                     <div className="form-field">
                       <label htmlFor="bank-name">Bank Name</label>
-                      <input type="text" id="bank-name" name="bank-name" />
+                      <input type="text" id="bank-name" />
                     </div>
+
                     <div className="form-field">
                       <label htmlFor="ifsc-code">IFSC code</label>
-                      <input type="text" id="ifsc-code" name="ifsc-code" />
+                      <input type="text" id="ifsc-code" />
                     </div>
+
                     <div className="form-field">
                       <label htmlFor="account-no">Account no.</label>
-                      <input type="text" id="account-no" name="account-no" />
+                      <input type="text" id="account-no" />
                     </div>
+
                     <div className="form-field">
                       <label htmlFor="upi-id">UPI Id</label>
-                      <input type="text" id="upi-id" name="upi-id" />
+                      <input type="text" id="upi-id" />
                     </div>
                   </div>
 
-                  {/* Right Side - Payout & Status Details */}
+                  {/* Right Side - Payout & Status */}
                   <div className="user-details-section">
                     <div className="detail-item">
                       <span className="detail-label">Current Month Payout</span>
                       <span className="detail-value">:2000/-</span>
                     </div>
+
                     <div className="detail-item">
                       <span className="detail-label">Total Payout</span>
-                      <span className="detail-value detail-value2">
-                        :2000/-
-                      </span>
+                      <span className="detail-value detail-value2">:2000/-</span>
                     </div>
+
                     <div className="status-item">
                       <span className="status-label">Status</span>
                       <button className="status-active-btn">Active</button>
@@ -237,79 +236,12 @@ function TeamMember() {
                     </div>
                   </div>
                 </div>
-
-                {/* Bottom Action Buttons */}
               </div>
+
             </div>
           </div>
         )}
       </div>
-=======
-       {viewModal && (
-  <div id="popupoverlay" onClick={() => setViewModal(false)}>
-    <div id="popupbox" onClick={(e) => e.stopPropagation()}>
-      <div id="popupheader">
-        <h3 id="popuptitle">User Name</h3>
-      </div>
-      <div id="popupbody">
-        <div className="modal-content-wrapper">
-          {/* Left Side - Bank Details */}
-          <div className="bank-details-section">
-            <h3 className="section-title">Bank Details</h3>
-            <div className="form-field">
-              <label htmlFor="bank-name">Bank Name</label>
-              <input type="text" id="bank-name" name="bank-name" />
-            </div>
-            <div className="form-field">
-              <label htmlFor="ifsc-code">IFSC code</label>
-              <input type="text" id="ifsc-code" name="ifsc-code" />
-            </div>
-            <div className="form-field">
-              <label htmlFor="account-no">Account no.</label>
-              <input type="text" id="account-no" name="account-no" />
-            </div>
-            <div className="form-field">
-              <label htmlFor="upi-id">UPI Id</label>
-              <input type="text" id="upi-id" name="upi-id" />
-            </div>
-          </div>
-
-          {/* Right Side - Payout & Status Details */}
-          <div className="user-details-section">
-            <div className="detail-item">
-              <span className="detail-label">Current Month Payout</span>
-              <span className="detail-value">:2000/-</span>
-            </div>
-            <div className="detail-item">
-              <span className="detail-label">Total Payout</span>
-              <span className="detail-value detail-value2">:2000/-</span>
-            </div>
-            <div className="status-item">
-              <span className="status-label">Status</span>
-              <button className="status-active-btn">Active</button>
-            </div>
-
-        <div className="modal-actions">
-          <button className="update-btn">Update Profile</button>
-          <button className="close-btn" onClick={() => setViewModal(false)}>
-            Close
-          </button>
-          <button className="delete-btn">Delete Profile</button>
-        </div>
-
-          </div>
-        </div>
-
-        {/* Bottom Action Buttons */}
-        
-      </div>
-    </div>
-  </div>
-)}
-
-      </div>
-      
->>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
     </>
   );
 }

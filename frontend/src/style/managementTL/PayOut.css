@@ -30,18 +30,13 @@ body {
 
 /* 1) Page container */
 #tl-payout-container {
-  max-width: 1030px;
   margin: 24px auto;
-<<<<<<< HEAD
   padding: 20px;
-=======
-  padding: 5px;
->>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
   background: var(--card);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  width: 100%;
 }
-
 #tl-payout-select select {
   margin: 0px;
   border: 1px solid var(--ring);

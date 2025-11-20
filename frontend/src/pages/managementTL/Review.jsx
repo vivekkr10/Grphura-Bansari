@@ -91,10 +91,11 @@ const Review = () => {
   return (
     <div
       id="untouchedData-container"
-      className="container-fluid bg-light min-vh-100"
+      className="container-fluid min-vh-100"
       style={{
         overflowX: "hidden",
         maxWidth: "100vw",
+        backgroundColor:"#ffffff"
       }}
     >
       <div className="row g-0">
@@ -195,6 +196,9 @@ const Review = () => {
                             fontSize: "15px",
                             fontWeight: 500,
                             cursor: "pointer",
+                            alignItems: "center",
+                            display: "flex",
+                            justifyContent: "center",
                           }}
                         >
                           View

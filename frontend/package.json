@@ -16,10 +16,7 @@
     "react": "^19.1.1",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.1",
-<<<<<<< HEAD
-=======
     "react-hook-form": "^7.66.0",
->>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.9.4",
     "rechart": "^0.0.1",

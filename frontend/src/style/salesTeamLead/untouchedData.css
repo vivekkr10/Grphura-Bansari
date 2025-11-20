@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-
-=======
->>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
 :root {
   --sidebar-width: 280px;
 }
@@ -14,10 +10,7 @@
   width: calc(100% - var(--sidebar-width));
   background-color: #fff;
   transition: margin-left 0.3s ease, width 0.3s ease;
-<<<<<<< HEAD
   font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
-=======
->>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
 }
 
 /* Mobile view */
@@ -28,12 +21,6 @@
   }
 }
 
-<<<<<<< HEAD
 img {
   background: none;
 }
-=======
-img{
-    background: none;
-}
->>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1

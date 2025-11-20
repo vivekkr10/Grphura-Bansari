@@ -101,9 +101,8 @@ const ClientManagement = () => {
           style={{
             fontSize: "50px",
             fontWeight: 400,
-            textAlign: "center",
+            textAlign: "left",
             marginBottom: "32px",
-            textDecoration: "underline",
             fontFamily: "Jost, sans-serif",
           }}
         >

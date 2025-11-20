@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 import React from "react";
-import "../../style/feedbackManager/salary.css";
+import "../../style/feedbackManager/salary.css"; // Using your correct CSS file
 
 function FeedbackSalary() {
   const fsalarydata = [
@@ -18,6 +17,7 @@ function FeedbackSalary() {
     <div>
       <div className="fsalary-container">
         <div className="fsalary-head">Salary</div>
+
         <div className="fsalary-filter">
           <select className="fsalary-dropdown">
             <option value="">Month</option>
@@ -25,9 +25,11 @@ function FeedbackSalary() {
             <option value="">Feb</option>
           </select>
         </div>
+
         <div className="fsalary-search">
           <button className="fsalary-search-btn">Search</button>
         </div>
+
         <div className="fsalary-table-container">
           <table className="fsalary-table">
             <thead>
@@ -40,6 +42,7 @@ function FeedbackSalary() {
                 <th>Amount</th>
               </tr>
             </thead>
+
             <tbody>
               {fsalarydata.map((row, idx) => (
                 <tr key={idx}>
@@ -54,72 +57,10 @@ function FeedbackSalary() {
             </tbody>
           </table>
         </div>
+
       </div>
     </div>
   );
 }
 
 export default FeedbackSalary;
-=======
-
-import React from 'react'
-import "../../style/feedbackManager/feedbacksalar.css"
-
-function FeedbackSalary() {
-     const fsalarydata = [
-    ...Array(6).fill({
-      name: "Bold text column",
-      tlname: "Bold text column",
-      emailid: "Bold text column",
-      contactno: "Bold text column",
-      duration: "Bold text column",
-      amount:"4500/-",
-    }),
-  ];
-
-  return (
-    <div>
-      <div className="fsalary-container">
-      <div className="fsalary-head">Salary</div>
-      <div className="fsalary-filter">
-        <select className="fsalary-dropdown">
-            <option value="">Month</option>
-            <option value="">Jan</option>
-            <option value="">Feb</option>
-        </select>
-      </div>
-      <div className="fsalary-search"><button className="fsalary-search-btn">Search</button></div>
-      <div className="fsalary-table-container">
-        <table className="fsalary-table">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Manager Name</th>
-              <th>Email_id</th>
-              <th>Contact no.</th>
-              <th>Duration</th>
-              <th>Amount</th>
-            </tr>
-          </thead>
-          <tbody>
-            {fsalarydata.map((row, idx) => (
-                <tr key={idx}>
-                  <td className="bold">{row.name}</td>
-                  <td className="bold">{row.tlname}</td>
-                  <td className="bold">{row.emailid}</td>
-                  <td className="bold">{row.contactno}</td>
-                  <td className="bold">{row.duration}</td>
-                  <td className="bold">{row.amount}</td>
-                                    
-                </tr>
-              ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
-    </div>
-  )
-}
-
-export default FeedbackSalary;
->>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
