@@ -156,7 +156,51 @@ const Dashboard = () => {
                       </td>
                     </tr>
                   </table>
+<<<<<<< HEAD
 
+=======
+                  {showViewPopup && (
+                    <div id="popup-overlay" onClick={closeViewPopup}>
+                      <div id="popup-box" onClick={(e) => e.stopPropagation()}>
+                        <div id="popup-header">
+                          <h3>Last Update</h3>
+                          <button id="close-btn" onClick={closeViewPopup}>
+                            Close
+                          </button>
+                        </div>
+
+                        <div id="popup-content">
+                          <div className="update-row">
+                            <p className="date">25/06/2025 07:04 PM</p>
+                            <p className="desc">
+                              I cannot directly generate HTML and CSS from an
+                              image of a dashboard. My capabilities do not
+                              extend to converting visual layouts into code.
+                            </p>
+                          </div>
+
+                          <div className="update-row">
+                            <p className="date">25/06/2025 07:04 PM</p>
+                            <p className="desc">
+                              I cannot directly generate HTML and CSS from an
+                              image of a dashboard. My capabilities do not
+                              extend to converting visual layouts into code.
+                            </p>
+                          </div>
+
+                          <div className="update-row">
+                            <p className="date">25/06/2025 07:04 PM</p>
+                            <p className="desc">
+                              I cannot directly generate HTML and CSS from an
+                              image of a dashboard. My capabilities do not
+                              extend to converting visual layouts into code.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+>>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
                   {showUpdatePopup && (
                     <div id="popup-overlay" onClick={closeUpdatePopup}>
                       <div id="popup-box" onClick={(e) => e.stopPropagation()}>
@@ -207,6 +251,7 @@ const Dashboard = () => {
           </section>
         </div>
       </div>
+<<<<<<< HEAD
       {showViewPopup && (
         <div id="popup-overlay" onClick={closeViewPopup}>
           <div id="popup-box" onClick={(e) => e.stopPropagation()}>
@@ -248,6 +293,8 @@ const Dashboard = () => {
           </div>
         </div>
       )}
+=======
+>>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
     </main>
   );
 };

@@ -140,9 +140,15 @@ export default function TransferProjects() {
             </span>
 
             {openInvoice === 1 ? (
+<<<<<<< HEAD
               <ChevronUp size={25} />
             ) : (
               <ChevronDown size={25} />
+=======
+              <ChevronDown size={25} />
+            ) : (
+              <ChevronUp size={25} />
+>>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
             )}
           </div>
         </div>

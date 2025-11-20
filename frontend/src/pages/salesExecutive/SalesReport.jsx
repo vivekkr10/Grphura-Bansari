@@ -61,7 +61,11 @@ const SalesReport = () => {
       {/* Table container */}
       <div id="sales-report-wrapper">
         <div id="sales-report-table-container">
+<<<<<<< HEAD
           <table id="sales-report-table" style={{width:"100%"}}>
+=======
+          <table id="sales-report-table">
+>>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
             <thead id="sales-report-thead">
               <tr id="sales-report-header-row">
                 <th id="th-company">Company Name</th>

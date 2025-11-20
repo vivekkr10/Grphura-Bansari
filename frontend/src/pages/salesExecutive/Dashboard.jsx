@@ -53,10 +53,14 @@ const Dashboard = () => {
             <div id="container">
               <div id="clients">
                 <h1>Hot Clients</h1>
+<<<<<<< HEAD
                 <div
                   id="client-list"
                   style={{ overflowX: "auto", whiteSpace: "nowrap" }}
                 >
+=======
+                <div id="client-list" style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
+>>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
                   <table id="se-table">
                     <thead>
                       <th> </th>
@@ -153,12 +157,57 @@ const Dashboard = () => {
                       </td>
                     </tr>
                   </table>
+<<<<<<< HEAD
+=======
+                  {showPopup && (
+                    <div id="popup-overlay" onClick={closePopup}>
+                      <div id="popup-box" onClick={(e) => e.stopPropagation()}>
+                        <div id="popup-header">
+                          <h3>Last Update</h3>
+                          <button id="close-btn" onClick={closePopup}>
+                            Close
+                          </button>
+                        </div>
+
+                        <div id="popup-content">
+                          <div className="update-row">
+                            <p className="date">25/06/2025 07:04 PM</p>
+                            <p className="desc">
+                              I cannot directly generate HTML and CSS from an
+                              image of a dashboard. My capabilities do not
+                              extend to converting visual layouts into code.
+                            </p>
+                          </div>
+
+                          <div className="update-row">
+                            <p className="date">25/06/2025 07:04 PM</p>
+                            <p className="desc">
+                              I cannot directly generate HTML and CSS from an
+                              image of a dashboard. My capabilities do not
+                              extend to converting visual layouts into code.
+                            </p>
+                          </div>
+
+                          <div className="update-row">
+                            <p className="date">25/06/2025 07:04 PM</p>
+                            <p className="desc">
+                              I cannot directly generate HTML and CSS from an
+                              image of a dashboard. My capabilities do not
+                              extend to converting visual layouts into code.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+>>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
                 </div>
               </div>
             </div>
           </section>
         </div>
       </div>
+<<<<<<< HEAD
       {showPopup && (
         <div id="popup-overlay" onClick={closePopup}>
           <div id="popup-box" onClick={(e) => e.stopPropagation()}>
@@ -200,6 +249,8 @@ const Dashboard = () => {
           </div>
         </div>
       )}
+=======
+>>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
     </main>
   );
 };

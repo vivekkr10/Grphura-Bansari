@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import calender from "../../assets/salesExecutive/report/calander.png";
+<<<<<<< HEAD
 import "../../style/salesExecutive/report.css";
+=======
+import "../../style/salesExecutive/report.css"
+>>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
 const Report = () => {
   const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({ callStatus: "", comment: "" });
@@ -35,11 +39,15 @@ const Report = () => {
   };
 
   return (
+<<<<<<< HEAD
     <div
       id="report-container"
       className="min-h-screen"
       style={{ backgroundColor: "#ffffffff" }}
     >
+=======
+    <div id="report-container" className="min-h-screen" style={{ backgroundColor: "#ffffffff" }}>
+>>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
       {/* Report Title */}
       <div style={{ padding: "28px 32px 24px" }}>
         <h1
@@ -84,6 +92,7 @@ const Report = () => {
             boxShadow: "0 4px 8px rgba(0, 0, 0, 0.05)",
           }}
         >
+<<<<<<< HEAD
           <div
             style={{
               overflowX: "auto",
@@ -91,6 +100,9 @@ const Report = () => {
               minWidth: "max-content",
             }}
           >
+=======
+          <div style={{ overflowX: "auto" }}>
+>>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
             <table style={{ width: "100%", borderCollapse: "collapse" }}>
               <thead>
                 <tr
@@ -425,6 +437,7 @@ const Report = () => {
             padding: "24px",
           }}
         >
+<<<<<<< HEAD
           <div
             style={{
               overflowX: "auto",
@@ -432,6 +445,9 @@ const Report = () => {
               minWidth: "max-content",
             }}
           >
+=======
+          <div style={{ overflowX: "auto" }}>
+>>>>>>> b7fdbe580138cd441b96a28790526d09ac296da1
             <table style={{ width: "100%", borderCollapse: "collapse" }}>
               <thead>
                 <tr
