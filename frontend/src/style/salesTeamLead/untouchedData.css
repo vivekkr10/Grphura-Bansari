@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --sidebar-width: 280px;
+}
+
+/* Main container */
+#untouchedData-container {
+  padding: 1.5rem;
+  margin-left: var(--sidebar-width);
+  width: calc(100% - var(--sidebar-width));
+  background-color: #fff;
+  transition: margin-left 0.3s ease, width 0.3s ease;
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Mobile view */
+@media (max-width: 1024px) {
+  #untouchedData-container {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+img {
+  background: none;
+}

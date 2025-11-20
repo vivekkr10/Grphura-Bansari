@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+.SalesManagerTeamMemberContainer {
+  padding: 1.5rem;
+  margin-left: var(--sidebar-width);
+  width: calc(100% - var(--sidebar-width));
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.TeamMemberContainerHeading {
+  color: #5a5c69;
+}
+
+.user-data-form {
+  background: #fff;
+  padding: 32px 24px 24px 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  /* max-width: 50%; */
+  margin: 0 auto;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 32px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+  font-size: 22px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(250, 247, 247, 0.863);
+  outline: none;
+  margin-bottom: 0;
+  color: #7e7e7e;
+  line-height: 1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 12px;
+}
+
+.form-group select {
+  background-image: url("../../assets/salesManager/TeamMember/v.svg");
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #3973e7;
+  box-shadow: 0 10px 30px rgba(57, 115, 231, 0.08);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.add-button {
+  width: 108px;
+  height: 33px;
+  background: #3973e7;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 32px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+  line-height: 16px;
+}
+
+.add-button:hover {
+  background: #2456b3;
+}
+
+#popupoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#popupbox {
+  background-color: #ffffff;
+  width: 1287px;
+  height: 559px;
+  max-width: 90%;
+  border-radius: 15px;
+  padding: 30px 40px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#popupheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 15px;
+}
+
+#popuptitle {
+  font-size: 36px;
+  font-weight: 600;
+  color: #5a5c69;
+  margin: 0;
+  text-align: center;
+}
+
+#popupbody {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Modal Content Layout */
+.modal-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Bank Details Section */
+.bank-details-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.section-title {
+  font-size: 25px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: row; /* label and input sit in a row */
+  align-items: center; /* vertically center them */
+  gap: 18px; /* horizontal spacing between label and input */
+  margin-bottom: 8px;
+}
+
+.form-field label {
+  width: 160px;
+  min-width: 120px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+}
+
+.form-field input {
+  width: 85%;
+  padding: 18px 14px;
+  height: 52px;
+  border: 1px solid #e9e5e5;
+  border-radius: 5px;
+  background: #fffefe;
+  box-shadow: 0 8px 20px rgba(250, 248, 248, 0.06);
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.form-field input:focus {
+  border-color: #3973e7;
+  box-shadow: 0 10px 30px rgba(57, 115, 231, 0.08);
+}
+
+/* User Details Section */
+.user-details-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 0;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.detail-label {
+  font-size: 25px;
+  font-weight: 600;
+  color: #1a1a1a;
+  white-space: nowrap; /* avoid label wrapping into two lines */
+  margin-right: 6px;
+  text-align: left;
+  flex: 0 0 auto;
+}
+
+.detail-value {
+  font-size: 25px;
+  font-weight: 600;
+  color: #1a1a1a;
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+
+.detail-value2 {
+  padding-left: 117px;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.status-active-btn {
+  background-color: #11ce4d;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 99px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 16px;
+}
+
+/* Modal Action Buttons */
+.modal-actions {
+  display: flex;
+  /* justify-content: center; */
+  gap: 20px;
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.update-btn {
+  background-color: #11ce4d;
+  color: white;
+  border: none;
+  height: 42px;
+  width: 126px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.update-btn:hover {
+  background-color: #218838;
+}
+
+.close-btn {
+  background-color: #3d68e7;
+  color: white;
+  border: none;
+  height: 42px;
+  width: 126px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.close-btn:hover {
+  background-color: #2456b3;
+}
+
+.delete-btn {
+  background-color: #ce4611;
+  color: white;
+  border: none;
+  height: 42px;
+  width: 126px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
