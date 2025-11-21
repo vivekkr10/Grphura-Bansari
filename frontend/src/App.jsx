@@ -35,7 +35,7 @@ import AccountantSidebar from "./components/accountant/Sidebar";
 import AccountantHeader from "./components/accountant/Header";
 
 function App() {
-  const role = localStorage.getItem("role") || "managerManagement"; // Example fallback
+  const role = localStorage.getItem("role") || "feedbackManager"; // Example fallback
   const currentRoutes = roleBasedRoutes[role] || [];
 
   // Choose header and sidebar dynamically
