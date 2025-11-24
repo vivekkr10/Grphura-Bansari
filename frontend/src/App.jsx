@@ -35,7 +35,7 @@ import AccountantSidebar from "./components/accountant/Sidebar";
 import AccountantHeader from "./components/accountant/Header";
 
 function App() {
-  const role = localStorage.getItem("role") || "managementEmployee"; // Example fallback
+  const role = localStorage.getItem("role") || "salesExecutive"; // Example fallback
   const currentRoutes = roleBasedRoutes[role] || [];
 
   const renderLayout = () => {
