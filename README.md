@@ -3,6 +3,10 @@
 A Customer Relationship Management (CRM) web application built by a 7-member team as part of our project work. The system is designed to manage clients, track sales, analyze data, and provide an easy-to-use dashboard interface.
 
 
+👨‍💻 Team Leader
+Abdul Qadir Khan
+
+
 👨‍💻 Team Members
 
 Vivek Kumar
